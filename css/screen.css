@@ -45,14 +45,17 @@ html { position: relative; }
 
 .l-video { position: absolute; left: 0; top: 41px; bottom: 120px; right: 367px; -webkit-transition: all .3s; }
 .is-withoutsidebar .l-video { right: 0; }
+.is-nosound .l-video { bottom: 92px; }
 
 .l-comments { position: absolute; width: 367px; right: 0; top: 41px; bottom: 120px; background: url(../img/noise.jpg) repeat 0 0; border-left: 1px solid rgba(255, 255, 255, 0.2); -webkit-transition: all .3s; }
+.is-nosound .l-comments { bottom: 92px; }
 .is-withoutsidebar .l-comments { -webkit-transform: translate(367px, 0); }
 .is-withoutsidebar .l-comments .l-comments__toggle i { -webkit-transform: rotate(180deg); }
 .l-comments .l-comments__toggle { position: absolute; width: 14px; height: 24px; background: #000; z-index: 100; left: -15px; top: 6px; cursor: pointer; border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
 .l-comments .l-comments__toggle i { background: url('../img/icons-sed76a8b3a2.png') 0 -1049px no-repeat; width: 4px; height: 8px; position: absolute; left: 4px; top: 8px; }
 
 .l-timeline { position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: #333; }
+.is-nosound .l-timeline { height: 92px; }
 
 .conversation-meta, .comments .comments__meta, .comment .comment__content { *zoom: 1; }
 .conversation-meta:after, .comments .comments__meta:after, .comment .comment__content:after { content: " "; display: table; }

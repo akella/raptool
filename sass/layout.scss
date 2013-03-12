@@ -22,6 +22,9 @@ html{
 	.is-withoutsidebar &{
 		right: 0;
 	}
+	.is-nosound &{
+		bottom: $timelineheight - 28px;
+	}
 }
 .l-comments{
 	position: absolute;
@@ -32,6 +35,10 @@ html{
 	background: url(../img/noise.jpg) repeat 0 0;
 	border-left: 1px solid rgba(#fff,.2);
 	-webkit-transition: all .3s;
+
+	.is-nosound &{
+		bottom: $timelineheight - 28px;
+	}
 	.is-withoutsidebar &{
 		-webkit-transform:translate($commentswidth, 0);
 		.l-comments__toggle{
@@ -67,7 +74,9 @@ html{
 	right: 0;
 	height: $timelineheight;
 	background: #333;
-
+	.is-nosound &{
+		height: $timelineheight - 28px;
+	}
 // 	background: blue;
 }
 

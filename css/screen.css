@@ -39,7 +39,7 @@ a img, fieldset { border: none; }
 .conversation-meta:after, .comments .comments__meta:after, .comment .comment__content:after { content: " "; display: table; }
 .conversation-meta:after, .comments .comments__meta:after, .comment .comment__content:after { clear: both; }
 
-body, html { height: 100%; position: relative; min-height: 600px; min-width: 1000px; }
+body, html { height: 100%; position: relative; }
 
 html { position: relative; }
 
@@ -105,7 +105,9 @@ html { position: relative; }
 .conversation-meta .conversation-meta__comments i.icon-arrow { display: inline-block; background: url('../img/icons-sed76a8b3a2.png') 0 -1126px no-repeat; width: 8px; height: 4px; margin-left: 8px; vertical-align: middle; }
 .conversation-meta .conversation-meta__comments.is-up i.icon-arrow { background: url('../img/icons-sed76a8b3a2.png') 0 -1112px no-repeat; width: 8px; height: 4px; }
 
-.comments .comments__meta { border-top: 1px solid rgba(255, 255, 255, 0.2); background: #0d0d0d; font-size: 11px; }
+.conversations { overflow: auto; max-height: 300px; }
+
+.comments .comments__meta { border-top: 1px solid rgba(255, 255, 255, 0.2); background: rgba(0, 0, 0, 0.3); font-size: 11px; }
 .comments .comments__sort { float: right; color: #ccc; margin-right: 15px; height: 19px; line-height: 19px; cursor: pointer; }
 .comments .comments__sort i { display: inline-block; background: url('../img/icons-sed76a8b3a2.png') 0 -1126px no-repeat; width: 8px; height: 4px; margin-left: 8px; vertical-align: middle; }
 .comments .comments__sort.is-up i { background: url('../img/icons-sed76a8b3a2.png') 0 -1112px no-repeat; width: 8px; height: 4px; }
@@ -141,9 +143,10 @@ html { position: relative; }
 .comment.comment_add .comment__input input.placeholder, .comment.comment_add .comment__input textarea.placeholder { color: 777; }
 .comment.comment_add .comment__input input:-moz-placeholder, .comment.comment_add .comment__input textarea:-moz-placeholder { color: 777; }
 .comment.comment_add .comment__input input::-webkit-input-placeholder, .comment.comment_add .comment__input textarea::-webkit-input-placeholder { color: 777; }
-.comment.comment_add .comment__input input:focus, .comment.comment_add .comment__input textarea:focus { color: #fff; outline: none; }
+.comment.comment_add .comment__input input:focus, .comment.comment_add .comment__input textarea:focus { color: #ccc; outline: none; }
 
 .timeline { position: relative; margin-bottom: 12px; }
+.timeline .timeline__progress { position: absolute; right: 0; top: 0px; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 100; font-size: 20px; text-indent: 20px; text-shadow: 1px 1px 1px #000; color: #ccc; line-height: 57px; vertical-align: middle; }
 .timeline .timeline__comment { position: absolute; bottom: 63px; background: #ffcb00; color: #000; font-family: "cpmono", monospace; font-size: 8px; cursor: pointer; background: url('../img/icons-sed76a8b3a2.png') 0 -536px no-repeat; width: 19px; height: 16px; background-image: none; }
 .timeline .timeline__comment .timeline__commenttext { position: absolute; bottom: -6px; z-index: 10; left: 0; width: 266px; border: 2px solid #ffcb00; background: url(../img/noise.jpg) repeat 0 0; padding: 7px 10px; font-family: "Lucida sans",sans-serif; opacity: 0; z-index: -1; overflow: hidden; -webkit-transition: all .3s; }
 .timeline .timeline__comment .timeline__commenttext.is-visible { z-index: 10; opacity: 1; bottom: 4px; }
@@ -192,7 +195,7 @@ html { position: relative; }
 
 .video-edit { text-align: center; position: absolute; right: 6px; top: 10px; width: 57px; }
 .video-edit .video-edit__fullscreen { display: block; margin: auto; margin-bottom: 14px; background: url('../img/icons-sed76a8b3a2.png') 0 -508px no-repeat; width: 17px; height: 18px; cursor: pointer; }
-.video-edit .video-edit__wipe, .video-edit .video-edit__undo { display: block; text-align: center; padding: 0; margin-bottom: 3px; border-radius: 3px; }
+.video-edit .video-edit__wipe, .video-edit .video-edit__undo { display: block; text-align: left; padding-left: 6px; margin-bottom: 3px; border-radius: 3px; white-space: nowrap; padding-right: 0; }
 .video-edit .video-edit__wipe i, .video-edit .video-edit__undo i { display: inline-block; margin-right: 3px; }
 .video-edit .video-edit__wipe i { background: url('../img/icons-sed76a8b3a2.png') 0 -894px no-repeat; width: 7px; height: 8px; }
 .video-edit .video-edit__undo i { background: url('../img/icons-sed76a8b3a2.png') 0 -850px no-repeat; width: 9px; height: 8px; }

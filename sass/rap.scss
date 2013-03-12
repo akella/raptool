@@ -185,10 +185,14 @@
 
 
 //meta header for all comments
+.conversations{
+	overflow: auto;
+	max-height:300px;
+}
 .comments{
 	.comments__meta{
 		border-top: 1px solid rgba(#fff,.2);
-		background: #0d0d0d;
+		background: rgba(#000,0.3);
 		font-size: 11px;
 		@extend %clr;
 	}
@@ -373,7 +377,7 @@
 				box-shadow:inset 1px 1px 3px rgba(#000,0.3);
 				overflow: hidden;
 				&:focus{
-					color: #fff;
+					color: #ccc;
 					outline:none;
 				}
 			}
@@ -383,6 +387,20 @@
 .timeline{
 	position: relative;
 	margin-bottom: 12px;
+	.timeline__progress{
+		position: absolute;
+		right: 0;
+		top: 0px;
+		height: 100%;
+		background: rgba(#000,0.6);
+		z-index: 100;
+		font-size: 20px;
+		text-indent: 20px;
+		text-shadow:1px 1px 1px #000;
+		color: #ccc;
+		line-height: 57px;
+		vertical-align: middle;
+	}
 	.timeline__comment{
 		position: absolute;
 		bottom: 63px;
@@ -637,10 +655,12 @@
 	.video-edit__wipe,.video-edit__undo{
 		@extend %button-alt;
 		display: block;
-		text-align: center;
-		padding: 0;
+		text-align: left;
+		padding-left:6px;
 		margin-bottom: 3px;
 		border-radius: 3px;
+		white-space:nowrap;
+		padding-right: 0;
 		i{
 			display: inline-block;
 			margin-right: 3px;
@@ -652,5 +672,4 @@
 	.video-edit__undo i{
 		@include sized-sprite($icons, undo);
 	}
-	
 }

@@ -9,4 +9,11 @@ $(document).ready(function() {
 	$('.toolbar__brushes,.toolbar__colors').click(function(event) {
 		$(this).children('.toolbar__drop').toggleClass('is-visible');
 	});
+	
+});
+
+$(window).resize(function(event) {
+	allcol = $('.l-comments').height();
+	commentheight  = allcol - 157;
+	$('.conversations').height(commentheight);
 });

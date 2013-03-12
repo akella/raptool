@@ -1,0 +1,76 @@
+@import "lib/base";
+$topnavheight: 41px;
+$timelineheight: 120px;
+$commentswidth: 367px;
+body,html{
+	height: 100%;
+	position: relative;
+	min-height: 600px;
+	min-width: 1000px;
+}
+html{
+	position: relative;
+}
+// default layout
+.l-video{
+	position: absolute;
+	left: 0;
+	top: $topnavheight;
+	bottom: $timelineheight;
+	right: $commentswidth;
+	-webkit-transition: all .3s;
+	.is-withoutsidebar &{
+		right: 0;
+	}
+}
+.l-comments{
+	position: absolute;
+	width: $commentswidth;
+	right: 0;
+	top: $topnavheight;
+	bottom: $timelineheight;
+	background: url(../img/noise.jpg) repeat 0 0;
+	border-left: 1px solid rgba(#fff,.2);
+	-webkit-transition: all .3s;
+	.is-withoutsidebar &{
+		-webkit-transform:translate($commentswidth, 0);
+		.l-comments__toggle{
+			i{
+				-webkit-transform:rotate(180deg);
+			}
+		}
+	}
+	.l-comments__toggle{
+		position: absolute;
+		width: 14px;
+		height: 24px;
+		background: #000;
+		z-index: 100;
+		left: -15px;
+		top: 6px;
+		cursor: pointer;
+		border-top-left-radius:4px;
+		border-bottom-left-radius:4px;
+		i{
+			@include sized-sprite($icons, arr-right);
+			position: absolute;
+			left: 4px;
+			top: 8px;
+		}
+	}
+// 	background: purple;
+}
+.l-timeline{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: $timelineheight;
+	background: #333;
+
+// 	background: blue;
+}
+
+// ipad layoyt portrait/landscape
+
+

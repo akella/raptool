@@ -1,0 +1,100 @@
+@import "lib/base";
+// SHORT HOWTO
+// =======Sprites
+// .whatever{
+// 	@include sized-sprite($icons, badge_hit);
+// 	@include retina{
+// 		@include sized-sprite($icons, badge_new);
+// 	}
+// }
+// =======animation example
+// @include keyframes(rotate) {
+//    from {
+//       @include rotate(0);
+//    }
+//    to {
+//       @include rotate(360);
+//    }
+// }
+// =======animation usage
+// body:hover{
+// 	@include animation(rotate 200s linear infinite);
+// }
+//=======animations easing, see easings.net for full list and examples, tnx @ai
+// 	transition: all 1.2s ceaser($ease-in);
+//
+// =======gradient example
+// body{
+// 	@include background-image(linear-gradient(#232323, #5c5c5c));
+// }
+// =======making bw-images
+// img{@extend %gray;}
+//
+// ========= predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+// @min-screen(320){ css goes here}
+// @max-screen(1000), @iphone5, @iphone4, @ipad-retina, @ipad, @hdpi - also available
+
+// BTW these comments will not render into css
+// for awesomeness use .🍺 class. Example:
+// .🍺{beer:everything}
+
+
+*{margin:0;padding:0;-webkit-text-size-adjust: none; }
+body{
+	background: #333;
+	font: {
+		family: "Lucida Sans", "Myriad Pro",sans-serif;
+		weight: normal;
+		size: 12px;
+	}
+	line-height:1.4;
+}
+@font-face {
+	font-family: 'cpmono';
+	src: url('fonts/cpmono_v07_plain-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+// resets
+a img,fieldset{
+	border:none;
+	}
+a{
+	&:hover{
+
+	}
+}
+%button{
+	color: #cbcbcb;
+	font-size: 12px;
+	@include text-shadow(0 -1px 1px #000);
+	height: 23px;
+	line-height: 24px;
+	display: inline-block;
+	padding: 0 10px;
+	border: 1px solid #000;
+	cursor: pointer;
+	@include background-image(linear-gradient(bottom, #717171 0%, #282828 100%));
+	&:hover{
+		@include background-image(linear-gradient(bottom, #282828 0%, #717171 100%));
+	}
+}
+%button-alt{
+	@extend %button;
+	@include background-image(linear-gradient(bottom, #282828 0%, #717171 100%));
+	&:hover{
+		@include background-image(linear-gradient(bottom, #717171 0%, #282828 100%));
+	}
+}
+.icon-online{
+	height: 8px;
+	width: 8px;
+	border-radius: 8px;
+	background: #8fc547;
+	display: inline-block;
+	margin-left: 3px;
+}
+.icon-offline{
+	@extend .icon-online;
+	background: #898989;
+}

@@ -1,0 +1,14 @@
+body, html { height: 100%; position: relative; min-height: 600px; min-width: 1000px; }
+
+html { position: relative; }
+
+.l-video { position: absolute; left: 0; top: 41px; bottom: 120px; right: 367px; -webkit-transition: all .3s; }
+.is-withoutsidebar .l-video { right: 0; }
+
+.l-comments { position: absolute; width: 367px; right: 0; top: 41px; bottom: 120px; background: url(../img/noise.jpg) repeat 0 0; border-left: 1px solid rgba(255, 255, 255, 0.2); -webkit-transition: all .3s; }
+.is-withoutsidebar .l-comments { -webkit-transform: translate(367px, 0); }
+.is-withoutsidebar .l-comments .l-comments__toggle i { -webkit-transform: rotate(180deg); }
+.l-comments .l-comments__toggle { position: absolute; width: 14px; height: 24px; background: #000; z-index: 100; left: -15px; top: 6px; cursor: pointer; border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+.l-comments .l-comments__toggle i { background: url('../img/icons-s060ad04eb4.png') 0 -342px no-repeat; width: 4px; height: 8px; position: absolute; left: 4px; top: 8px; }
+
+.l-timeline { position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: #333; }

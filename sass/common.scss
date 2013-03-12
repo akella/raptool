@@ -48,6 +48,7 @@ body{
 		size: 12px;
 	}
 	line-height:1.4;
+	overflow:hidden;
 }
 @font-face {
 	font-family: 'cpmono';
@@ -76,6 +77,9 @@ a{
 	cursor: pointer;
 	@include background-image(linear-gradient(bottom, #717171 0%, #282828 100%));
 	&:hover{
+		@include background-image(linear-gradient(bottom, darken(#717171,10%) 0%, darken(#282828,10%) 100%));
+	}
+	&:active{
 		@include background-image(linear-gradient(bottom, #282828 0%, #717171 100%));
 	}
 }
@@ -83,6 +87,9 @@ a{
 	@extend %button;
 	@include background-image(linear-gradient(bottom, #282828 0%, #717171 100%));
 	&:hover{
+		@include background-image(linear-gradient(bottom, darken(#282828,10%) 0%, darken(#717171,10%) 100%));
+	}
+	&:active{
 		@include background-image(linear-gradient(bottom, #717171 0%, #282828 100%));
 	}
 }

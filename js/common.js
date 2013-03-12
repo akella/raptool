@@ -6,4 +6,7 @@ $(document).ready(function() {
 	$('.l-comments__toggle').click(function(event) {
 		$('body').toggleClass('is-withoutsidebar')
 	});
+	$('.toolbar__brushes,.toolbar__colors').click(function(event) {
+		$(this).children('.toolbar__drop').toggleClass('is-visible');
+	});
 });

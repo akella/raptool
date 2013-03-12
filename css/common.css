@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0; -webkit-text-size-adjust: none; }
 
-body { background: #333; font-family: "Lucida Sans", "Myriad Pro",sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; }
+body { background: #333; font-family: "Lucida Sans", "Myriad Pro",sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; overflow: hidden; }
 
 @font-face { font-family: 'cpmono'; src: url("fonts/cpmono_v07_plain-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 

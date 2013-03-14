@@ -15,5 +15,6 @@ $(document).ready(function() {
 $(window).resize(function(event) {
 	allcol = $('.l-comments').height();
 	commentheight  = allcol - 157;
+	console.log(allcol+'---157==='+commentheight);
 	$('.conversations').height(commentheight);
 });

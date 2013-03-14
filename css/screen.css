@@ -108,7 +108,7 @@ html { position: relative; }
 .conversation-meta .conversation-meta__comments i.icon-arrow { display: inline-block; background: url('../img/icons-sed76a8b3a2.png') 0 -1126px no-repeat; width: 8px; height: 4px; margin-left: 8px; vertical-align: middle; }
 .conversation-meta .conversation-meta__comments.is-up i.icon-arrow { background: url('../img/icons-sed76a8b3a2.png') 0 -1112px no-repeat; width: 8px; height: 4px; }
 
-.conversations { overflow: auto; max-height: 300px; }
+.conversations { overflow: auto; }
 
 .comments .comments__meta { border-top: 1px solid rgba(255, 255, 255, 0.2); background: rgba(0, 0, 0, 0.3); font-size: 11px; }
 .comments .comments__sort { float: right; color: #ccc; margin-right: 15px; height: 19px; line-height: 19px; cursor: pointer; }

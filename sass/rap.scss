@@ -515,7 +515,7 @@
 	font-size: 0;
 	padding-top: 13px;
 	float: left;
-	.controls__play,.controls__back, .controls__forw{
+	.controls__play,.controls__back, .controls__forw,.controls__pause{
 		@extend %button;
 		width: 46px;
 		padding: 0;
@@ -528,13 +528,14 @@
 			opacity: .7;
 		}
 	}
-	.controls__play{
+	.controls__pause{
 		width: 66px;
 		i{
 			@include sized-sprite($icons, control_play);
 		}
 	}
-	.controls__pause{
+	.controls__play{
+		width: 66px;
 		i{
 			@include sized-sprite($icons, control_playgo);
 		}

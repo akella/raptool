@@ -110,11 +110,12 @@
 .timecode.timecode__frame .timecode__value { color: #ccc; }
 
 .controls { font-size: 0; padding-top: 13px; float: left; }
-.controls .controls__play, .controls .controls__back, .controls .controls__forw { width: 46px; padding: 0; text-align: center; margin-left: 1px; }
-.controls .controls__play i, .controls .controls__back i, .controls .controls__forw i { display: inline-block; position: relative; top: 3px; opacity: .7; }
+.controls .controls__play, .controls .controls__back, .controls .controls__forw, .controls .controls__pause { width: 46px; padding: 0; text-align: center; margin-left: 1px; }
+.controls .controls__play i, .controls .controls__back i, .controls .controls__forw i, .controls .controls__pause i { display: inline-block; position: relative; top: 3px; opacity: .7; }
+.controls .controls__pause { width: 66px; }
+.controls .controls__pause i { background: url('../img/icons-sed76a8b3a2.png') 0 -1087px no-repeat; width: 11px; height: 15px; }
 .controls .controls__play { width: 66px; }
-.controls .controls__play i { background: url('../img/icons-sed76a8b3a2.png') 0 -1087px no-repeat; width: 11px; height: 15px; }
-.controls .controls__pause i { background: url('../img/icons-sed76a8b3a2.png') 0 -938px no-repeat; width: 8px; height: 14px; }
+.controls .controls__play i { background: url('../img/icons-sed76a8b3a2.png') 0 -938px no-repeat; width: 8px; height: 14px; }
 .controls .controls__back { border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
 .controls .controls__back i { background: url('../img/icons-sed76a8b3a2.png') 0 -803px no-repeat; width: 15px; height: 15px; }
 .controls .controls__forw { border-top-right-radius: 3px; border-bottom-right-radius: 3px; }

@@ -93,6 +93,22 @@ a{
 		@include background-image(linear-gradient(bottom, #717171 0%, #282828 100%));
 	}
 }
+%input{
+	width: 100%;
+	height: 28px;
+	@include box-sizing(border-box);
+	padding: 7px 8px 0 8px;
+	color: #777;
+	@include placeholder-color(777);
+	border: 1px solid #444;
+	background: #363636;
+	box-shadow:inset 1px 1px 3px rgba(#000,0.3);
+	overflow: hidden;
+	&:focus{
+		color: #ccc;
+		outline:none;
+	}
+}
 .icon-online{
 	height: 8px;
 	width: 8px;

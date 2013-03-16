@@ -132,12 +132,68 @@
 	border-bottom: 1px solid rgba(#fff,.2);
 	@extend %clr;
 	background: rgba(#000,0.5);
-
+	height: 38px;
+	line-height: 38px;
+	.conversation-meta__drop{
+		position: absolute;
+		top: 38px;
+		left: 0;
+		background: url(../img/noise.jpg) repeat 0 0;
+		width: 100%;
+		z-index: 200;
+		
+		border-bottom: 1px solid #000;
+		box-shadow:0 25px 25px -25px rgba(#000,1);
+	}
+	.conversation-meta__drop-item{
+		@extend %clr;
+		cursor: pointer;
+		&:nth-child(even){
+			background: rgba(#000,.2);
+		}
+		.icon-arrow{
+			opacity: 0;
+		}
+	}
+	.conversation-meta__addnew{
+		cursor: pointer;
+	}
+	.conversation-meta__visibleto{
+		display: block;
+		font-size: 11px;
+		line-height: 1;
+		margin-top: -10px;
+		margin-left: 28px;
+		padding-bottom: 3px;
+		color: #777;
+		text-transform: uppercase;
+		a{
+			color: #ccc;
+			text-decoration: none;
+			text-transform: none;
+			margin-left: 2px;
+		}
+	}
+	.conversation-meta__createnew{
+		height: 34px;
+		line-height: 34px;
+		text-decoration: underline;
+		cursor: pointer;
+		padding-left: 17px;
+		color: #ccc;
+		border-top: 1px solid rgba(#fff,.2);
+		i{
+			@include sized-sprite($icons, createnew);
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+	}
 	.conversation-meta__status{
 		font-size: 12px;
 		color: #ccc;
 		margin-left: 14px;
-		height: 38px;
+		min-height: 38px;
 		line-height: 38px;
 		float: left;
 		i{
@@ -282,6 +338,10 @@
 		margin-right: 10px;
 		p{
 			overflow: hidden;
+		}
+		a{
+			color: #ccc;
+			text-decoration: underline;
 		}
 	}
 	.comment__action{

@@ -134,6 +134,22 @@
 	background: rgba(#000,0.5);
 	height: 38px;
 	line-height: 38px;
+	.is-hasnew{
+		position: relative;
+		&:before{
+			position: absolute;
+			content: ' ';
+			width: 30%;
+			height: 100%;
+			right: 0;
+			top: 0;
+			z-index: 0;
+			@include background-image(linear-gradient(left, rgba(#517b22, 0), rgba(#517b22, .8) 30%));
+		}
+		.conversation-meta__comments{
+			color: #fff;
+		}
+	}
 	.conversation-meta__drop{
 		position: absolute;
 		top: 38px;
@@ -219,6 +235,8 @@
 		color: #707070;
 		font-size: 12px;
 		cursor: pointer;
+		position: relative;
+		z-index: 2;
 		.icon-comments{
 			@include sized-sprite($icons, smallcomment);
 			display: inline-block;
@@ -240,6 +258,8 @@
 	.addconv{
 		padding: 10px;
 		line-height: 1;
+		position: relative;
+		z-index: 30;
 		.addconv__input{
 			@extend %input;
 			padding-top: 0;
@@ -422,6 +442,10 @@
 			text-decoration: underline;
 		}
 	}
+	&.comment_edit .comment__action{
+		right: 13px;
+		opacity: 1;
+	}
 	.comment__action{
 		position: absolute;
 		right: 13px - 10px;
@@ -429,6 +453,7 @@
 		font-size: 11px;
 		-webkit-transition:all .2s;
 		opacity: 0;
+		
 		a{
 			color: #999;
 			text-decoration: none;
@@ -448,11 +473,23 @@
 		.comment__actionshare{
 			i{
 				@include sized-sprite($icons, share);
+				opacity: .4;
+			}
+			&.is-active{
+				i{
+					opacity: 1;
+				}
 			}
 		}
 		.comment__actionedit{
 			i{
 				@include sized-sprite($icons, edit);
+				opacity: .4;
+			}
+			&.is-active{
+				i{
+					opacity: 1;
+				}
 			}
 		}
 	}
@@ -503,6 +540,47 @@
 			input,textarea{
 				@extend %input;
 			}
+		}
+	}
+	
+}
+.commentedit{
+	.commentedit__input{
+		@extend %input;
+		
+	}
+	.commentedit__save{
+		@extend %button;
+		margin-right: 5px;
+		i{
+			margin-right: 5px;
+			display: inline-block;
+			vertical-align: middle;
+			@include sized-sprite($icons, savecomment);
+		}
+	}
+	.commentedit__cancel{
+		display: inline-block;
+		color: #ccc;
+		text-decoration: underline;
+		cursor: pointer;
+		font-size: 11px;
+	}
+	.commentedit__delete{
+		float: right;
+		font-size: 10px;
+		color: #6d6d6d;
+		text-decoration: underline;
+		cursor: pointer;
+		position: relative;
+		line-height: 1;
+		margin-top: 10px;
+		&:before{
+			content: ' ';
+			position: absolute;
+			left: -10px;
+			top: 1px;
+			@include sized-sprite($icons, x);
 		}
 	}
 }

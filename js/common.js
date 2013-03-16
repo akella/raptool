@@ -10,6 +10,11 @@ $(document).ready(function() {
 		$(this).children('.toolbar__drop').toggleClass('is-visible');
 	});
 	
+
+	allcol = $('.l-comments').height();
+	commentheight  = allcol - 157;
+	console.log(allcol+'---157==='+commentheight);
+	$('.conversations').height(commentheight);
 });
 
 $(window).resize(function(event) {

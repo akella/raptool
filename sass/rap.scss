@@ -276,6 +276,7 @@
 				margin-right: 1px;
 			}
 			.addconv__addmoredrop{
+				cursor: default;
 				position: absolute;
 				right: 0;
 				top: 12px;
@@ -611,7 +612,11 @@
 		right: -3px;
 		cursor: pointer;
 		width: 3px;
+		.is-nosound &{
+			height: 56px + 3px + 1px - 28px;
+		}
 	}
+
 }
 .timecode{
 	float: left;
@@ -628,6 +633,13 @@
 	}
 	&.timecode__frame{
 		margin-left: -30px;
+// 		.timecode__value{
+// 			color: #ccc;
+// 		}
+	}
+	.is-tapetimecode &.timecode_tape,
+	.is-standardtimecode &.timecode_standard,
+	.is-frametimecode &.timecode_frame,{
 		.timecode__value{
 			color: #ccc;
 		}

@@ -28,7 +28,7 @@ a img, fieldset { border: none; }
 
 .icon-offline { background: #898989; }
 
-.topper { overflow: hidden; width: 100%; background-color: #212121; border-bottom: 1px solid #000; height: 40px; line-height: 40px; }
+.topper { overflow: hidden; width: 100%; background-color: #212121; border-bottom: 1px solid #000; height: 40px; line-height: 40px; color: #777; }
 .topper a { text-decoration: none; text-shadow: 0 1px 0 #000; color: #777; }
 .topper a:hover { color: #2f669f; }
 
@@ -130,7 +130,7 @@ html { position: relative; }
 .conversation-meta .addconv .addconv__users .addconv__user i { display: inline-block; vertical-align: middle; background: url('../img/icons-s11fcc7faee.png') 0 -735px no-repeat; width: 6px; height: 6px; margin-right: 3px; cursor: pointer; }
 .conversation-meta .addconv .addconv__addmore { color: #777; cursor: pointer; position: relative; display: inline-block; margin-left: 15px; }
 .conversation-meta .addconv .addconv__addmore i { display: inline-block; background: url('../img/icons-s11fcc7faee.png') 0 -1110px no-repeat; width: 6px; height: 6px; vertical-align: middle; margin-right: 1px; }
-.conversation-meta .addconv .addconv__addmore .addconv__addmoredrop { position: absolute; right: 0; top: 12px; width: 163px; background: #363636; border: 1px solid #000; box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); color: #ccc; }
+.conversation-meta .addconv .addconv__addmore .addconv__addmoredrop { cursor: default; position: absolute; right: 0; top: 12px; width: 163px; background: #363636; border: 1px solid #000; box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); color: #ccc; }
 .conversation-meta .addconv .addconv__addmore .addconv__addmoredrop dt { padding: 4px 9px; color: #ccc; background: #252525; }
 .conversation-meta .addconv .addconv__addmore .addconv__addmoredrop dd { padding: 4px 9px; cursor: pointer; }
 .conversation-meta .addconv .addconv__addmore .addconv__addmoredrop dd:hover { background: #252525; }
@@ -187,12 +187,13 @@ html { position: relative; }
 .timeline .timeline__track { height: 3px; background: #555; margin-bottom: 1px; }
 .timeline .timeline__trackcurrent { position: relative; height: 3px; background: #c2c2c2; }
 .timeline .timeline__trackred { height: 60px; border-left: 1px solid #c40011; background: rgba(0, 0, 0, 0.3); position: absolute; right: -3px; cursor: pointer; width: 3px; }
+.is-nosound .timeline .timeline__trackred { height: 32px; }
 
 .timecode { float: left; margin: 0 100px 0 14px; color: #777; }
 .timecode .timecode__label { font-size: 11px; text-transform: uppercase; }
 .timecode .timecode__value { font-size: 25px; font-family: "cpmono",monospace; line-height: 1; }
 .timecode.timecode__frame { margin-left: -30px; }
-.timecode.timecode__frame .timecode__value { color: #ccc; }
+.is-tapetimecode .timecode.timecode_tape .timecode__value, .is-standardtimecode .timecode.timecode_standard .timecode__value, .is-frametimecode .timecode.timecode_frame .timecode__value { color: #ccc; }
 
 .controls { font-size: 0; padding-top: 13px; float: left; }
 .controls .controls__play, .controls .controls__back, .controls .controls__forw, .controls .controls__pause { width: 46px; padding: 0; text-align: center; margin-left: 1px; }

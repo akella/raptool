@@ -56,7 +56,7 @@
 		@extend .toolbar__brushes;
 	}
 	.toolbar__drop{
-		z-index: 10;
+		z-index: -10;
 		position: absolute;
 		top: 27px - 5px;
 		width: 88px;
@@ -72,6 +72,7 @@
 		&.is-visible{
 			opacity: 1;
 			top: 27px;
+			z-index: 10;
 		}
 	}
 	.toolbar__color{
@@ -296,27 +297,7 @@
 				margin-right: 1px;
 			}
 			.addconv__addmoredrop{
-				cursor: default;
-				position: absolute;
-				right: 0;
-				top: 12px;
-				width: 163px;
-				background: #363636;
-				border: 1px solid #000;
-				box-shadow:0 0 10px rgba(#000,0.6);
-				color: #ccc;
-				dt{
-					padding: 4px 9px;
-					color: #ccc;
-					background: #252525;
-				}
-				dd{
-					padding: 4px 9px;
-					cursor: pointer;
-					&:hover{
-						background: #252525;
-					}
-				}
+				@extend %smalldrop;
 			}
 		}
 		.addconv__cancel{
@@ -356,6 +337,8 @@
 		height: 19px;
 		line-height: 19px;
 		cursor: pointer;
+		position: relative;
+		z-index: 50;
 		i{
 			display: inline-block;
 			@include sized-sprite($icons, arr-down);
@@ -369,6 +352,10 @@
 		}
 		&:hover{
 			color: #fff;
+		}
+		.comments__sortways{
+			@extend %smalldrop;
+			top: 20px;
 		}
 	}
 	.comments__update{
@@ -453,7 +440,6 @@
 		font-size: 11px;
 		-webkit-transition:all .2s;
 		opacity: 0;
-		
 		a{
 			color: #999;
 			text-decoration: none;
@@ -611,6 +597,20 @@
 		cursor: pointer;
 		@include sized-sprite($icons, comment);
 		background-image: none;
+		&.is-private{
+			@include sized-sprite($icons, commentprivate);
+			.timeline__commentbg{
+				@include sized-sprite($icons, commentprivate);
+			}
+			&.timeline__comment_multiple{
+				&:before{
+					@include sized-sprite($icons, commentprivate);
+				}
+			}
+			.timeline__commenttext{
+				border-color: #dedede;
+			}
+		}
 		.timeline__commenttext{
 			position: absolute;
 			bottom: 4px - 10px;
@@ -625,6 +625,8 @@
 			z-index: -1;
 			overflow: hidden;
 			-webkit-transition: all .3s;
+			max-height: 200px;
+			overflow: auto;
 			&.is-visible{
 				z-index: 10;
 				opacity: 1;
@@ -658,6 +660,14 @@
 				right: -2px;
 				@include sized-sprite($icons, comment);
 				height: 11px;
+			}
+			.comment{
+				border-bottom: 1px solid rgba(#fff,.2);
+				padding: 4px 10px;
+				margin: 0 -10px;
+				&:last-child{
+					border: none;
+				}
 			}
 		}
 		&.timeline__comment_upper{

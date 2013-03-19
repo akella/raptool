@@ -597,7 +597,7 @@
 		cursor: pointer;
 		@include sized-sprite($icons, comment);
 		background-image: none;
-		&.is-private{
+		&.is-private, .is-private &, .is-allprivate &{
 			@include sized-sprite($icons, commentprivate);
 			.timeline__commentbg{
 				@include sized-sprite($icons, commentprivate);

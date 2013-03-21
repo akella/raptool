@@ -1,4 +1,5 @@
 @import "lib/base";
+@import "ipadornot";
 $topnavheight: 41px;
 $timelineheight: 120px;
 $commentswidth: 367px;
@@ -24,6 +25,10 @@ html{
 	}
 	.is-nosound &{
 		bottom: $timelineheight - 28px;
+	}
+	@include ipad{
+		top: $topnavheight + 42px;
+		right: 0;
 	}
 }
 .l-comments{
@@ -64,8 +69,10 @@ html{
 			left: 4px;
 			top: 8px;
 		}
+	} 
+	@include ipad(){
+		display: none;
 	}
-// 	background: purple;
 }
 .l-timeline{
 	position: absolute;
@@ -77,9 +84,18 @@ html{
 	.is-nosound &{
 		height: $timelineheight - 28px;
 	}
-// 	background: blue;
 }
 
-// ipad layoyt portrait/landscape
 
+
+// ipad layoyt portrait/landscape
+.l-toptoolbar{
+	height: 42px;
+	position: absolute;
+	top: 42px;
+	left: 0;
+	right: 0;
+	background: #252525;
+	box-shadow:0 20px 20px -20px rgba(#000,.7) inset;
+}
 

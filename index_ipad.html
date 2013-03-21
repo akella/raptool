@@ -1,0 +1,491 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<meta name="viewport" content="width=device-width"/>
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<!-- <body class="is-nosound"> FOR INTERFACE WITHOUT WAVEFORM-->
+<body class="is-tapetimecode">
+<!-- BEGIN topper -->
+<div class="topper">
+		<!-- BEGIN topper__nav -->
+		<nav class="topper__nav">
+			<ul>
+				<li><a href="#">Queue</a></li>
+				<li><a href="#">Video</a></li>
+				<li><a href="#">Audio</a></li>
+				<li><a href="#">Audio ingest</a></li>
+				<li><a href="#">Frame</a></li>
+				<li><a href="#">Match</a></li>
+			</ul>
+		</nav>
+		<!-- END topper__nav -->
+		<!-- BEGIN profile -->
+		<div class="profile">
+			<div class="profile__user"><a href="#">admin</a></div>
+			<div class="profile__logout"><a href="#">Logout</a></div>
+		</div>
+		<!-- END profile -->
+</div>
+<!-- END topper -->
+
+
+<!-- BEGIN  l-toptoolbar-->
+<div class="l-toptoolbar">
+	<!-- BEGIN  toolbar-->
+	<div class="toolbar">
+		<div class="toolbar__pencil"></div>
+		<div class="toolbar__line"></div>
+		<div class="toolbar__rect"></div>
+		<div class="toolbar__round"></div>
+		<div class="toolbar__arrow"></div>
+		<div class="toolbar__crop"></div>
+		<div class="toolbar__commenti"></div>
+		<div class="toolbar__sep"></div>
+		<div class="toolbar__colors">
+			<i class="toolbar__color is-active" style="background:#7fc430"></i> <i class="icon-drop"></i>
+			<div class="toolbar__drop">
+				<div class="toolbar__color" style="background:#7fc430;"></div>
+				<div class="toolbar__color" style="background:#e9008c;"></div>
+				<div class="toolbar__color" style="background:#0074ba;"></div>
+				<div class="toolbar__color" style="background:#79e6d2;"></div>
+				<div class="toolbar__color" style="background:#ffffff;"></div>
+				<div class="toolbar__color" style="background:#000000;"></div>
+			</div>
+		</div>
+		<div class="toolbar__brushes">
+			<i class="toolbar__brush toolbar__brush1 is-active"></i> <i class="icon-drop"></i>
+			
+			<div class="toolbar__drop">
+				<div class="toolbar__brush toolbar__brush1"></div>
+				<div class="toolbar__brush toolbar__brush2"></div>
+				<div class="toolbar__brush toolbar__brush3"></div>
+				<div class="toolbar__brush toolbar__brush4"></div>
+				<div class="toolbar__brush toolbar__brush5"></div>
+				<div class="toolbar__brush toolbar__brush6"></div>
+			</div>
+		</div>
+		<div class="toolbar__sep"></div>
+	</div>
+	<!-- END toolbar-->
+	
+	
+	<!-- BEGIN  conversation-->
+	<div class="conversation-meta ">
+		<div class="conversation-meta__status conversation-meta__addnew is-private">Choose a conversation or add new</div>
+		<div class="conversation-meta__comments is-up">
+			<!-- <i class="icon-comments"></i>13 500 --><i class="icon-arrow"></i>
+		</div>
+		<div class="conversation-meta__drop">
+			
+			<!-- form -->
+			<div class="conversation-meta__form addconv">
+				<input type="text" class="addconv__input" placeholder="Name the conversation">
+				<div class="addconv__users">
+					<span class="addconv__userslabel">Visible to</span> <div class="addconv__user"><i></i>Dash</div> <div class="addconv__user"><i></i>Dash</div>
+					<div class="addconv__addmore"><i></i>Add more
+						<dl class="addconv__addmoredrop">
+							<dt>Admins</dt>
+							<dd>Dash</dd>
+							<dd>Dash</dd>
+							<dt>Users</dt>
+							<dd>Blah</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="addconv__submit"><i></i>Create the conversation</div> <a href="#" class="addconv__cancel">Cancel</a>
+			</div>
+			<!-- form -->
+			<!-- item -->
+			<div class="conversation-meta__drop-item is-hasnew">
+				<div class="conversation-meta__status conversation-meta__addnew is-private"><i></i>Choose a conversation or add new</div>
+				<div class="conversation-meta__comments is-up">
+					13 500<i class="icon-arrow"></i>
+				</div>
+			</div>
+			<!-- item -->
+			<!-- item -->
+			<div class="conversation-meta__drop-item">
+				<div class="conversation-meta__status conversation-meta__addnew "><i></i>Choose a conversation or add new
+				<div class="conversation-meta__visibleto">Visible to: <a href="#">Rainbow Dash</a>, <a href="#">Rainbow Dash</a>,</div>
+				</div>
+				<div class="conversation-meta__comments is-up">
+					<i class="icon-comments"></i>13 500<i class="icon-arrow"></i>
+				</div>
+			</div>
+			<!-- item -->
+			<!-- item -->
+			<div class="conversation-meta__drop-item">
+				<div class="conversation-meta__status conversation-meta__addnew is-private"><i></i>Choose a conversation or add new</div>
+				<div class="conversation-meta__comments is-up">
+					<i class="icon-comments"></i>13 500<i class="icon-arrow"></i>
+				</div>
+			</div>
+			<!-- item -->
+			<div class="conversation-meta__createnew">
+				<i></i>Create new conversation
+			</div>
+		</div>
+	</div>
+	<!-- END conversation-->
+</div>
+<!-- END l-toptoolbar-->
+
+
+<!-- BEGIN  l-video-->
+<div class="l-video">
+	<!-- BEGIN  video-edit-->
+	<div class="video-edit">
+		<div class="video-edit__fullscreen"></div>
+		<div class="video-edit__undo"><i></i>Undo</div>
+		<div class="video-edit__wipe"><i></i>Wipe</div>
+		
+	</div>
+	<!-- END video-edit-->
+	<div class="videoholder">
+		<img src="img/video.jpg" alt="">
+	</div>
+</div>
+<!-- END l-video-->
+
+<!-- BEGIN  l-comments-->
+<div class="l-comments">
+	<div class="l-comments__toggle"><i></i></div>
+	
+
+	
+	<!-- BEGIN  conversation-->
+	<div class="conversation-meta ">
+		<div class="conversation-meta__status conversation-meta__addnew is-private">Choose a conversation or add new</div>
+		<div class="conversation-meta__comments is-up">
+			<!-- <i class="icon-comments"></i>13 500 --><i class="icon-arrow"></i>
+		</div>
+		<div class="conversation-meta__drop">
+			
+			<!-- form -->
+			<div class="conversation-meta__form addconv">
+				<input type="text" class="addconv__input" placeholder="Name the conversation">
+				<div class="addconv__users">
+					<span class="addconv__userslabel">Visible to</span> <div class="addconv__user"><i></i>Dash</div> <div class="addconv__user"><i></i>Dash</div>
+					<div class="addconv__addmore"><i></i>Add more
+						<dl class="addconv__addmoredrop">
+							<dt>Admins</dt>
+							<dd>Dash</dd>
+							<dd>Dash</dd>
+							<dt>Users</dt>
+							<dd>Blah</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="addconv__submit"><i></i>Create the conversation</div> <a href="#" class="addconv__cancel">Cancel</a>
+			</div>
+			<!-- form -->
+			<!-- item -->
+			<div class="conversation-meta__drop-item is-hasnew">
+				<div class="conversation-meta__status conversation-meta__addnew is-private"><i></i>Choose a conversation or add new</div>
+				<div class="conversation-meta__comments is-up">
+					13 500<i class="icon-arrow"></i>
+				</div>
+			</div>
+			<!-- item -->
+			<!-- item -->
+			<div class="conversation-meta__drop-item">
+				<div class="conversation-meta__status conversation-meta__addnew "><i></i>Choose a conversation or add new
+				<div class="conversation-meta__visibleto">Visible to: <a href="#">Rainbow Dash</a>, <a href="#">Rainbow Dash</a>,</div>
+				</div>
+				<div class="conversation-meta__comments is-up">
+					<i class="icon-comments"></i>13 500<i class="icon-arrow"></i>
+				</div>
+			</div>
+			<!-- item -->
+			<!-- item -->
+			<div class="conversation-meta__drop-item">
+				<div class="conversation-meta__status conversation-meta__addnew is-private"><i></i>Choose a conversation or add new</div>
+				<div class="conversation-meta__comments is-up">
+					<i class="icon-comments"></i>13 500<i class="icon-arrow"></i>
+				</div>
+			</div>
+			<!-- item -->
+			<div class="conversation-meta__createnew">
+				<i></i>Create new conversation
+			</div>
+		</div>
+	</div>
+	<!-- END conversation-->
+	
+	
+	
+	
+	
+	<!-- BEGIN  toolbar-->
+	<div class="toolbar">
+		<div class="toolbar__pencil"></div>
+		<div class="toolbar__line"></div>
+		<div class="toolbar__rect"></div>
+		<div class="toolbar__round"></div>
+		<div class="toolbar__arrow"></div>
+		<div class="toolbar__crop"></div>
+		<div class="toolbar__sep"></div>
+		<div class="toolbar__colors">
+			<i class="toolbar__color is-active" style="background:#7fc430"></i> <i class="icon-drop"></i>
+			<div class="toolbar__drop">
+				<div class="toolbar__color" style="background:#7fc430;"></div>
+				<div class="toolbar__color" style="background:#e9008c;"></div>
+				<div class="toolbar__color" style="background:#0074ba;"></div>
+				<div class="toolbar__color" style="background:#79e6d2;"></div>
+				<div class="toolbar__color" style="background:#ffffff;"></div>
+				<div class="toolbar__color" style="background:#000000;"></div>
+			</div>
+		</div>
+		<div class="toolbar__brushes">
+			<i class="toolbar__brush toolbar__brush1 is-active"></i> <i class="icon-drop"></i>
+			
+			<div class="toolbar__drop">
+				<div class="toolbar__brush toolbar__brush1"></div>
+				<div class="toolbar__brush toolbar__brush2"></div>
+				<div class="toolbar__brush toolbar__brush3"></div>
+				<div class="toolbar__brush toolbar__brush4"></div>
+				<div class="toolbar__brush toolbar__brush5"></div>
+				<div class="toolbar__brush toolbar__brush6"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END toolbar-->
+	
+	<!-- BEGIN comments -->
+	<div class="comments">
+		<!-- BEGIN  conversation-->
+		<div class="conversation conversation_noborder">
+			<!-- BEGIN  comment comment_tab-->
+			<div class="comment comment_add">
+				<div class="comment__av"><img src="img/av.png" alt=""></div>
+				<div class="comment__addcomment"><i></i></div>
+				<div class="comment__input"><textarea>Add a reply…</textarea></div>
+				
+			</div>
+			<!-- END comment comment_tab-->
+		</div>
+		<!-- conversation -->
+		
+		<div class="comments__meta">
+			<div class="comments__update is-active"><i></i>10 new comments</div>
+			<div class="comments__sort is-up">Arrange by Frame<i></i></div>
+		</div>
+		<!-- BEGIN  conversation-->
+		<div class="conversations">
+		<!-- BEGIN  conversation-->
+		<div class="conversation">
+			
+			<!-- begin comment -->
+			<div class="comment">
+				<div class="comment__meta">
+					<div class="comment__av"><img src="img/av.png" alt=""></div>
+					<span class="comment__author">Rainbow Dash</span> <i class="icon-offline"></i> <div class="comment__frame">on Frame 4235</div>
+					<div class="comment__published">Feb 8, 2013 15:38</div>
+				</div>
+				<div class="comment__content">
+					<div class="comment__thumb"><img src="img/thumb.jpg" alt=""></div>
+					<p>I actually like almost anything. <br>I just think it needs to be cooler. Yeah, the better! The cooler!</p>
+				</div>
+				<div class="comment__action">
+					<a href="#" class="comment__actionshare">Share<i></i></a>
+					<a href="#" class="comment__actionedit">Edit or Delete<i></i></a>
+				</div>
+			</div>
+			<!-- end comment -->
+			
+
+			<!-- BEGIN  comment comment_tab-->
+			<div class="comment comment_tab comment_add">
+				<div class="comment__av"><img src="img/av.png" alt=""></div>
+				<div class="comment__addcomment"><i></i></div>
+				<div class="comment__input"><textarea>Add a reply…</textarea></div>
+				
+			</div>
+			<!-- END comment comment_tab-->
+			
+		</div>
+		<!-- END conversation-->
+		<!-- BEGIN  conversation-->
+		<div class="conversation">
+			
+			<!-- begin comment -->
+			<div class="comment">
+				<div class="comment__meta">
+					<div class="comment__av"><img src="img/av.png" alt=""></div>
+					<span class="comment__author">Rainbow Dash</span> <i class="icon-offline"></i> <div class="comment__frame">on Frame 4235</div>
+					<div class="comment__published">Feb 8, 2013 15:38</div>
+				</div>
+				<div class="comment__content">
+					<p>I actually like almost anything. <br>I just think it needs to be cooler. Yeah, the better! The cooler!</p>
+				</div>
+				<div class="comment__action">
+					<a href="#" class="comment__actionshare">Share<i></i></a>
+					<a href="#" class="comment__actionedit">Edit or Delete<i></i></a>
+				</div>
+			</div>
+			<!-- end comment -->
+			
+			<!-- begin comment -->
+			<div class="comment comment_tab comment_edit">
+				<div class="comment__meta">
+					<div class="comment__av"><img src="img/av.png" alt=""></div>
+					<span class="comment__author">Rainbow Dash</span> <i class="icon-online"></i> <div class="comment__frame">on Frame 4235</div>
+					<div class="comment__published">Feb 8, 2013 15:38</div>
+				</div>
+				<div class="comment__content">
+					<div class="commentedit">
+						<textarea name="" class="commentedit__input" id="" cols="30" rows="10">Content of the comment</textarea>
+						<div class="commentedit__delete">Delete comment</div>
+						<div class="commentedit__save"><i></i>Save comment</div>
+						<div class="commentedit__cancel">Cancel</div>
+						
+					</div>
+				</div>
+				<div class="comment__action">
+					<a href="#" class="comment__actionshare">Share<i></i></a>
+					<a href="#" class="comment__actionedit is-active">Edit or Delete<i></i></a>
+				</div>
+			</div>
+			<!-- end comment -->
+			<!-- begin comment -->
+			<div class="comment comment_tab">
+				<div class="comment__meta">
+					<div class="comment__av"><img src="img/av.png" alt=""></div>
+					<span class="comment__author">Rainbow Dash</span> <i class="icon-offline"></i> <div class="comment__frame">on Frame 4235</div>
+					<div class="comment__published">Feb 8, 2013 15:38</div>
+				</div>
+				<div class="comment__content">
+					<p>I actually like almost anything. <br>I just think it needs to be cooler. Yeah, the better! The cooler!</p>
+				</div>
+				<div class="comment__action">
+					<a href="#" class="comment__actionshare">Share<i></i></a>
+					<a href="#" class="comment__actionedit">Edit or Delete<i></i></a>
+				</div>
+			</div>
+			<!-- end comment -->
+			<!-- BEGIN  comment comment_tab-->
+			<div class="comment comment_tab comment_add">
+				<div class="comment__av"><img src="img/av.png" alt=""></div>
+				<div class="comment__addcomment"><i></i></div>
+				<div class="comment__input"><textarea>Add a reply…</textarea></div>
+				
+			</div>
+			<!-- END comment comment_tab-->
+			
+		</div>
+		<!-- END conversation-->
+		</div>
+		<!-- END conversations-->
+		
+	</div>
+	<!-- END comments-->
+</div>
+<!-- END l-comments-->
+
+<!-- BEGIN  l-timeline-->
+<div class="l-timeline">
+	<!-- BEGIN  timeline-->
+	<div class="timeline">
+		<div class="timeline__progress" style="width:70%">90% left</div>
+		<div class="timeline__track">
+			<div class="timeline__trackcurrent" style="width:60%"><div class="timeline__trackred"></div></div>
+		</div>
+		<div class="timeline__comment timeline__comment_multiple" style="left:20%">
+			<div class="timeline__commentbg">1</div>
+			<div class="timeline__commenttext">
+				<!-- begin comment -->
+				<div class="comment">
+					<a href="#" class="comment__actionshare"><i></i></a>
+					<div class="comment__meta">
+						<div class="comment__av"><img src="img/av.png" alt=""></div>
+						<span class="comment__author">Rainbow Dash</span> <i class="icon-offline"></i> <div class="comment__frame">on Frame 4235</div>
+						<div class="comment__published">Feb 8, 2013 15:38 <a href="#" class="comment__actionedit"><i></i></a></div>
+					</div>
+					<div class="comment__content">
+						<p>I actually like almost anything. <br>I just think it needs to be cooler. Yeah, the better! The cooler!</p>
+					</div>
+				</div>
+				<!-- end comment -->
+
+				<!-- begin comment -->
+				<div class="comment">
+					<a href="#" class="comment__actionshare"><i></i></a>
+					<div class="comment__meta">
+						<div class="comment__av"><img src="img/av.png" alt=""></div>
+						<span class="comment__author">Rainbow Dash</span> <i class="icon-offline"></i> <div class="comment__frame">on Frame 4235</div>
+						<div class="comment__published">Feb 8, 2013 15:38 <a href="#" class="comment__actionedit"><i></i></a></div>
+					</div>
+					<div class="comment__content">
+						<div class="comment__thumb"><img src="img/thumb.jpg" alt=""></div>
+						<p>I actually like almost anything. <br>I just think it needs to be cooler. Yeah, the better! The cooler!</p>
+					</div>
+				</div>
+				<!-- end comment -->
+				<!-- begin comment -->
+				<div class="comment">
+					<a href="#" class="comment__actionshare"><i></i></a>
+					<div class="comment__meta">
+						<div class="comment__av"><img src="img/av.png" alt=""></div>
+						<span class="comment__author">Rainbow Dash</span> <i class="icon-offline"></i> <div class="comment__frame">on Frame 4235</div>
+						<div class="comment__published">Feb 8, 2013 15:38 <a href="#" class="comment__actionedit"><i></i></a></div>
+					</div>
+					<div class="comment__content">
+						<p>I actually like almost anything. <br>I just think it needs to be cooler. Yeah, the better! The cooler!</p>
+					</div>
+				</div>
+				<!-- end comment -->
+			</div>
+		</div>
+
+		<div class="timeline__comment timeline__comment_multiple" style="left:51%"><div class="timeline__commentbg">10</div></div>
+		<div class="timeline__comment timeline__comment_multiple timeline__comment_upper" style="left:50%"><div class="timeline__commentbg">10</div></div>
+		
+		<div class="timeline__framestrack">
+			<div style="height:28px;background:url(img/frames.png)"></div>
+		</div>
+		<div class="timeline__audio">
+			<div style="height:28px;background:url(img/audio.png)"></div>
+		</div>
+	</div>
+	<!-- END timeline-->
+	
+
+	<div class="timecode timecode_standard">
+		<div class="timecode__label">standard timecode</div>
+		<div class="timecode__value">04:01:32.140</div>
+	</div>
+	<div class="timecode timecode_tape">
+		<div class="timecode__label">Tape  timecode</div>
+		<div class="timecode__value">04:01:32.140</div>
+	</div>
+	<div class="timecode timecode__frame">
+		<div class="timecode__label">Frame Number</div>
+		<div class="timecode__value">4235</div>
+	</div>
+	<div class="controls">
+		<div class="controls__back"><i></i></div>
+		<div class="controls__play controls__pause"><i></i></div>
+		<div class="controls__pause"><i></i></div>
+		<div class="controls__forw"><i></i></div>
+	</div>
+	<div class="volume">
+		<div class="volume__label">Volume</div>
+		<div class="volume__less"></div>
+		<input type="range" name="" class="volume__range" id="">
+		<div class="volume__more"></div>
+	</div>
+	<div class="likes">
+		<div class="likes__like"><i></i>Like</div>
+		<div class="likes__dislike"><i></i>Dislike</div>
+	</div>
+	
+</div>
+<!-- END l-timeline-->
+
+</body>
+</html>

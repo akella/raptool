@@ -1,0 +1,16 @@
+// this is just a placeholder, so we can override it with ipad styles. Or whatever tabled we will need
+@mixin ipad
+{
+  @media only screen {
+    @content;
+  }
+}
+
+// uncommenting this - we will get styles for ipad
+// @mixin ipad
+// {
+//   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+//   {
+//     @content;
+//   }
+// }

@@ -1,11 +1,14 @@
 @import "lib/base";
 
-
+@import "ipadornot";
 
 // toolbar
 .toolbar{
 	height: 44px;
 	padding: 8px 0 0 10px;
+	@include ipad{
+		padding-top: 4px;
+	}
 	@include box-sizing(border-box);
 
 	@each $i in pencil,line,rect,round,arrow,crop,commenti{
@@ -14,6 +17,9 @@
 			cursor: pointer;
 			vertical-align: middle;
 			margin-right: 3px;
+			@include ipad{
+				margin-right: 20px;
+			}
 			@include sized-sprite($icons, #{$i});
 			&:hover,&.is-active{
 				@include sized-sprite($icons, #{$i}_h); 
@@ -41,6 +47,11 @@
 		margin-left: 17px;
 		position: relative;
 		cursor: pointer;
+
+		@include ipad{
+			margin-left: 30px;
+			margin-right: 20px;
+		}
 		.icon-drop{
 			position: absolute;
 			right: 7px;
@@ -54,6 +65,9 @@
 	}
 	.toolbar__colors{
 		@extend .toolbar__brushes;
+		@include ipad{
+			margin-right: 0;
+		}
 	}
 	.toolbar__drop{
 		z-index: -10;
@@ -135,6 +149,14 @@
 	background: rgba(#000,0.5);
 	height: 38px;
 	line-height: 38px;
+	@include ipad{
+		height: 42px;
+		line-height: 42px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 300px;
+	}
 	.is-hasnew{
 		position: relative;
 		&:before{
@@ -597,6 +619,10 @@
 		cursor: pointer;
 		@include sized-sprite($icons, comment);
 		background-image: none;
+		@include ipad{
+			@include sized-sprite($icons, ipad-comment);
+			font-size: 18px;
+		}
 		&.is-private, .is-private &, .is-allprivate &{
 			@include sized-sprite($icons, commentprivate);
 			.timeline__commentbg{
@@ -614,6 +640,9 @@
 		.timeline__commenttext{
 			position: absolute;
 			bottom: 4px - 10px;
+			@include ipad{
+				bottom: 7px - 10px;
+			}
 			z-index: 10;
 			left: 0;
 			width: 266px;
@@ -631,10 +660,17 @@
 				z-index: 10;
 				opacity: 1;
 				bottom: 4px;
+				@include ipad{
+					bottom: 7px ;
+				}
 			}
 		}
 		.timeline__commentbg{
 			@include sized-sprite($icons, comment);
+			@include ipad{
+				@include sized-sprite($icons, ipad-comment);
+				padding-top: 4px;
+			}
 			@include box-sizing(border-box);
 			line-height: 14px;
 			padding-right: 4px;
@@ -660,6 +696,11 @@
 				right: -2px;
 				@include sized-sprite($icons, comment);
 				height: 11px;
+				@include ipad{
+					@include sized-sprite($icons, ipad-comment);
+					top: -3px;
+					right: -3px;
+				}
 			}
 			.comment{
 				border-bottom: 1px solid rgba(#fff,.2);
@@ -672,13 +713,44 @@
 		}
 		&.timeline__comment_upper{
 			bottom: 63px + 14px;
+			@include ipad{
+				bottom: 63px + 14px + 20px;
+			}
 			&:after{
 				content:' ';
 				position: absolute;
 				height: 63px + 14px;
 				bottom: -63px - 14px;
+				@include ipad{
+					height: 63px + 14px + 20px;
+					bottom: -63px - 14px - 20px;
+				}
 				left: 4px;
 				border-left: 1px solid rgba(#ffcb00,0.4);
+			}
+		}
+		.comment__actionshare{
+			@include ipad{
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				display: inline-block;
+				@include sized-sprite($icons, share);
+				opacity: .4;
+			}
+			&:hover{
+				@include ipad{opacity: 1;}
+			}
+		}
+		.comment__actionedit{
+			@include ipad{
+				display: inline-block;
+				@include sized-sprite($icons, edit);
+				margin-left: 5px;
+				opacity: .4;
+			}
+			&:hover{
+				@include ipad{opacity: 1;}
 			}
 		}
 	}
@@ -710,6 +782,9 @@
 	float: left;
 	margin: 0 100px 0 14px;
 	color: #777;
+	@include ipad{
+		margin: 0 10px;
+	}
 	.timecode__label{
 		font-size: 11px;
 		text-transform: uppercase;
@@ -721,9 +796,9 @@
 	}
 	&.timecode__frame{
 		margin-left: -30px;
-// 		.timecode__value{
-// 			color: #ccc;
-// 		}
+		@include ipad{
+			margin-left: 10px;
+		}
 	}
 	.is-tapetimecode &.timecode_tape,
 	.is-standardtimecode &.timecode_standard,
@@ -737,6 +812,9 @@
 	font-size: 0;
 	padding-top: 13px;
 	float: left;
+	@include ipad{
+		margin-left: 20px;
+	}
 	.controls__play,.controls__back, .controls__forw,.controls__pause{
 		@extend %button;
 		width: 46px;
@@ -783,6 +861,9 @@
 	float: right;
 	font-size: 0;
 	margin-right: 20px;
+	@include ipad{
+		margin-left: 10px;
+	}
 	.likes__like, .likes__dislike{
 		@extend %button;
 		margin-left: 1px;
@@ -813,6 +894,9 @@
 	width: 198px;
 	float: left;
 	margin-left: 20px;
+	@include ipad{
+		display: none;
+	}
 	input{
 		display: inline-block;
 		border: 1px solid #444;
@@ -867,12 +951,21 @@
 	right: 6px;
 	top: 10px;
 	width: 57px;
+	@include ipad{
+		width: 400px;
+		text-align: right;
+	}
 	.video-edit__fullscreen{
 		display: block;
 		margin: auto;
 		margin-bottom: 14px;
 		@include sized-sprite($icons, fullscreen);
 		cursor: pointer;
+		@include ipad{
+			float: right;
+			margin-left: 15px;
+			margin-top: 1px;
+		}
 	}
 	.video-edit__wipe,.video-edit__undo{
 		@extend %button-alt;
@@ -883,6 +976,12 @@
 		border-radius: 3px;
 		white-space:nowrap;
 		padding-right: 0;
+		@include ipad{
+			float: right;
+			padding-right:10px;
+			
+			margin-left: 15px;
+		}
 		i{
 			display: inline-block;
 			margin-right: 3px;

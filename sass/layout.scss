@@ -26,7 +26,7 @@ html{
 	.is-nosound &{
 		bottom: $timelineheight - 28px;
 	}
-	@include ipad{
+	@include ipad(){
 		top: $topnavheight + 42px;
 		right: 0;
 	}
@@ -69,7 +69,7 @@ html{
 			left: 4px;
 			top: 8px;
 		}
-	} 
+	}
 	@include ipad(){
 		display: none;
 	}
@@ -90,6 +90,10 @@ html{
 
 // ipad layoyt portrait/landscape
 .l-toptoolbar{
+	display: none;
+	@include ipad(){
+		display: block;
+	}
 	height: 42px;
 	position: absolute;
 	top: 42px;

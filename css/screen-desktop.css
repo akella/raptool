@@ -70,7 +70,8 @@ html { position: relative; }
 .l-timeline { position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: #333; }
 .is-nosound .l-timeline { height: 92px; }
 
-.l-toptoolbar { height: 42px; position: absolute; top: 42px; left: 0; right: 0; background: #252525; box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.7) inset; }
+.l-toptoolbar { display: none; height: 42px; position: absolute; top: 42px; left: 0; right: 0; background: #252525; box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.7) inset; }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { .l-toptoolbar { display: block; } }
 
 .conversation-meta, .conversation-meta .conversation-meta__drop-item, .comments .comments__meta, .comment .comment__content { *zoom: 1; }
 .conversation-meta:after, .conversation-meta .conversation-meta__drop-item:after, .comments .comments__meta:after, .comment .comment__content:after { content: " "; display: table; }

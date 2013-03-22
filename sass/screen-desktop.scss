@@ -1,0 +1,13 @@
+
+
+// this hides tablet styles from desktop users
+@mixin ipad{
+	// or any tablet media query
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+	{
+		@content; 
+	}
+}
+
+@import "screen";
+

@@ -1,0 +1,7 @@
+
+//this means all tablet styles gogogo
+@mixin ipad{
+	@content;
+}
+@import "screen";
+

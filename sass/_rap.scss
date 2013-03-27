@@ -598,6 +598,22 @@
 		}
 
 	}
+	.comment__like{
+		text-decoration: underline;
+		display: inline-block;
+		padding-left: 20px;
+		position: relative;
+		cursor: pointer;
+		margin-top: 2px;
+		i{
+			@include sized-sprite($icons,like);
+			
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 1px;
+		}
+	}
 	
 }
 .commentedit{

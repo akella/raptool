@@ -1,6 +1,5 @@
 @import "lib/base";
 
-@import "ipadornot";
 
 // toolbar
 .toolbar{
@@ -150,12 +149,14 @@
 	height: 38px;
 	line-height: 38px;
 	@include ipad{
-		height: 42px;
-		line-height: 42px;
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 300px;
+		height: 43px;
+		line-height: 43px;
+// 		height: 42px;
+// 		line-height: 42px;
+// 		position: absolute;
+// 		right: 0;
+// 		top: 0;
+// 		width: 300px;
 	}
 	.is-hasnew{
 		position: relative;
@@ -183,6 +184,9 @@
 		
 		border-bottom: 1px solid #000;
 		box-shadow:0 25px 25px -25px rgba(#000,1);
+		&.is-hidden{
+			display: none;
+		}
 	}
 	.conversation-meta__drop-item{
 		@extend %clr;
@@ -247,6 +251,10 @@
 			i{
 				@include sized-sprite($icons, private);
 			}
+		}
+		@include ipad{
+			height: 42px;
+			line-height: 42px;
 		}
 	}
 	.conversation-meta__comments{
@@ -351,6 +359,7 @@
 		background: rgba(#000,0.3);
 		font-size: 11px;
 		@extend %clr;
+		@include ipad{font-size: 13px;}
 	}
 	.comments__sort{
 		float: right;
@@ -361,6 +370,7 @@
 		cursor: pointer;
 		position: relative;
 		z-index: 50;
+		@include ipad{height: 29px;line-height:29px;}
 		i{
 			display: inline-block;
 			@include sized-sprite($icons, arr-down);
@@ -391,6 +401,7 @@
 		vertical-align: middle;
 		padding-right: 20px;
 		text-shadow: 0 1px 2px rgba(#000,0.6);
+		@include ipad{line-height: 29px;height:29px}
 		i{
 			display: inline-block;
 			margin-right: 6px;
@@ -443,6 +454,7 @@
 	.comment__content{
 		@extend %clr;
 		margin-right: 10px;
+		font-size: 13px;
 		p{
 			overflow: hidden;
 		}
@@ -528,6 +540,11 @@
 			img{
 				margin-bottom: 0;
 			}
+			@include ipad{
+				margin-right: -2px;
+				position: relative;
+				z-index: 3;
+			}
 		}
 		.comment__addcomment{
 			float: right;
@@ -549,6 +566,7 @@
 				@extend %input;
 			}
 		}
+
 	}
 	
 }

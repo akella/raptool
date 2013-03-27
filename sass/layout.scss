@@ -1,5 +1,4 @@
 @import "lib/base";
-@import "ipadornot";
 $topnavheight: 41px;
 $timelineheight: 120px;
 $commentswidth: 367px;
@@ -71,7 +70,8 @@ html{
 		}
 	}
 	@include ipad(){
-		display: none;
+		bottom: 0;
+		z-index: 400;
 	}
 }
 .l-timeline{

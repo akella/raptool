@@ -424,7 +424,34 @@
 	&.comment_tab{
 		margin-left: 38px;
 		border-top: 1px solid rgba(#fff,.2);
-		box-shadow:0 -1px 0 rgba(#000,0.5)
+		box-shadow:0 -1px 0 rgba(#000,0.5);
+		@include ipad{
+			margin-left: 0;
+		}
+	}
+	.comment__actionshare{
+		@include ipad{
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			display: inline-block;
+			@include sized-sprite($icons, ipad-link);
+// 			opacity: .4;
+		}
+		&:hover{
+			@include ipad{opacity: 1;}
+		}
+	}
+	.comment__actionedit{
+		@include ipad{
+			display: inline-block;
+			@include sized-sprite($icons, ipad-edit);
+			margin-left: 5px;
+// 			opacity: .4;
+		}
+		&:hover{
+			@include ipad{opacity: 1;}
+		}
 	}
 	.comment__frame{
 		font-size: 11px;
@@ -474,6 +501,9 @@
 		font-size: 11px;
 		-webkit-transition:all .2s;
 		opacity: 0;
+		@include ipad{
+			display: none;
+		}
 		a{
 			color: #999;
 			text-decoration: none;
@@ -747,30 +777,7 @@
 				border-left: 1px solid rgba(#ffcb00,0.4);
 			}
 		}
-		.comment__actionshare{
-			@include ipad{
-				position: absolute;
-				right: 10px;
-				top: 10px;
-				display: inline-block;
-				@include sized-sprite($icons, share);
-				opacity: .4;
-			}
-			&:hover{
-				@include ipad{opacity: 1;}
-			}
-		}
-		.comment__actionedit{
-			@include ipad{
-				display: inline-block;
-				@include sized-sprite($icons, edit);
-				margin-left: 5px;
-				opacity: .4;
-			}
-			&:hover{
-				@include ipad{opacity: 1;}
-			}
-		}
+		
 	}
 	.timeline__track{
 		height: 3px;

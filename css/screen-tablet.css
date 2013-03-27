@@ -160,6 +160,8 @@ html { position: relative; }
 
 .comment { font-size: 13px; color: #aaaaaa; line-height: 1.3; position: relative; }
 .comment.comment_tab { margin-left: 38px; border-top: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5); margin-left: 0; }
+.comment.comment_tab.is-new:before { left: -48px; }
+.comment.is-new:before { position: absolute; height: 100%; top: 0; left: -10px; width: 2px; background: #45661F; content: ' '; }
 .comment .comment__actionshare { position: absolute; right: 10px; top: 10px; display: inline-block; background: url('../img/icons-sa32e851d46.png') 0 -1204px no-repeat; width: 18px; height: 14px; }
 .comment .comment__actionshare:hover { opacity: 1; }
 .comment .comment__actionedit { display: inline-block; background: url('../img/icons-sa32e851d46.png') 0 -1228px no-repeat; width: 18px; height: 16px; margin-left: 5px; }

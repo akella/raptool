@@ -428,6 +428,22 @@
 		@include ipad{
 			margin-left: 0;
 		}
+		&.is-new{
+			&:before{
+				left: -48px;
+			}
+		}
+	}
+	&.is-new{
+		&:before{
+			position: absolute;
+			height: 100%;
+			top: 0;
+			left: -10px;
+			width: 2px;
+			background: #45661F;
+			content:' ';
+		}
 	}
 	.comment__actionshare{
 		@include ipad{

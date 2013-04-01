@@ -1,3 +1,4 @@
+@import 'lib/base';
 //topper
 .topper{
 	overflow: hidden;
@@ -15,6 +16,20 @@
 			color: #2f669f;
 		}
 	}
+	&.topper_withlogo{
+		height: 33px;
+		line-height: 33px;
+		border-style: none;
+	}
+	.topper__logo{
+		float: left;
+		@extend %hide-text;
+		@include sized-sprite($q, sony);
+		margin-left: 10px;
+		margin-top: 6px;
+		margin-right: 29px;
+		cursor: pointer;
+	}
 }
 
 
@@ -27,7 +42,6 @@
 		margin-right: 8px;
 	}
 }
-
 //profile
 .profile{
 	float: right;

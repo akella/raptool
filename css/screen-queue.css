@@ -1,0 +1,113 @@
+.topper .topper__logo { font: 0/0 a; text-shadow: none; color: transparent; }
+
+* { margin: 0; padding: 0; -webkit-text-size-adjust: none; }
+
+body { background: #333; font-family: "Lucida Sans", "Myriad Pro",sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; overflow: hidden; }
+
+@font-face { font-family: 'cpmono'; src: url("fonts/cpmono_v07_plain-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+a img, fieldset { border: none; }
+
+.icon-online, .icon-offline { height: 8px; width: 8px; border-radius: 8px; background: #8fc547; display: inline-block; margin-left: 3px; }
+
+.icon-offline { background: #898989; }
+
+.topper .topper__logo { font: 0/0 a; text-shadow: none; color: transparent; }
+
+.topper { overflow: hidden; width: 100%; background-color: #212121; border-bottom: 1px solid #000; height: 40px; line-height: 40px; color: #777; }
+.topper a { text-decoration: none; text-shadow: 0 1px 0 #000; color: #777; }
+.topper a:hover { color: #2f669f; }
+.topper.topper_withlogo { height: 33px; line-height: 33px; border-style: none; }
+.topper .topper__logo { float: left; background: url('../img/queue-sac97d5bfb1.png') 0 0 no-repeat; width: 100px; height: 20px; margin-left: 10px; margin-top: 6px; margin-right: 29px; cursor: pointer; }
+
+.topper__nav { float: left; margin-left: 15px; }
+.topper__nav li { display: inline; margin-right: 8px; }
+
+.profile { float: right; margin-right: 17px; }
+.profile .profile__user, .profile .profile__logout { display: inline-block; }
+.profile .profile__user { font-family: 'LucidaSans-Demi', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; margin-right: 5px; }
+.profile .profile__user a { color: #fff; }
+.profile .profile__user a:hover { color: #2f669f; }
+
+.topper .topper__logo { font: 0/0 a; text-shadow: none; color: transparent; }
+
+body { overflow: auto; }
+
+.is-hidden { display: none; }
+
+.is-fixed { position: fixed; top: 0; right: 0; left: 12px; }
+
+.qsearch { margin-bottom: 20px; }
+
+.title .title__collapse, .season .season__collapse, .episode .season__collapse, .episode .episode__collapse { position: absolute; right: 15px; cursor: pointer; color: #777; text-decoration: underline; font-size: 11px; line-height: 1; font-family: Tahoma,sans-serif; padding-left: 14px; }
+.title .title__collapse i, .season .season__collapse i, .episode .season__collapse i, .episode .episode__collapse i { background: url('../img/queue-sac97d5bfb1.png') 0 -151px no-repeat; width: 9px; height: 9px; position: absolute; left: 0px; top: 2px; }
+.title .is-collapsed.title__collapse i, .season .is-collapsed.season__collapse i, .episode .is-collapsed.season__collapse i, .episode .is-collapsed.episode__collapse i { background: url('../img/queue-sac97d5bfb1.png') 0 -266px no-repeat; width: 9px; height: 9px; }
+
+.title { border-bottom: 3px solid #000000; margin-left: 12px; margin-bottom: 15px; }
+.title .title__header { height: 50px; position: relative; line-height: 50px; }
+.title .title__title { display: inline-block; vertical-align: middle; margin-right: 50px; cursor: pointer; }
+.title .title__title span { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75); font-family: 'LucidaSans-Demi', Arial, "Helvetica CY",  sans-serif; color: #F7F7F7; -webkit-mask-image: -webkit-linear-gradient(black 40%, rgba(255, 255, 255, 0.6) 70%); font-size: 19px; }
+.title .title__title i { display: inline-block; margin-right: 8px; background: url('../img/queue-sac97d5bfb1.png') 0 -196px no-repeat; width: 15px; height: 15px; }
+.title .title__title input { display: none; }
+.title .title__title input:checked + i { outline: 1px solid #fff; }
+.title .title__collapse { top: 20px; }
+.title .title__status { list-style: none; display: inline-block; white-space: nowrap; color: #ccc; }
+.title .title__status li { display: inline-block; margin-right: 23px; }
+.title .title__status li strong { text-transform: uppercase; color: #777; font-weight: normal; }
+
+.alpha { background: #FAFAFA; border-left: 1px solid #181819; }
+.alpha .alpha__meta { position: relative; }
+.alpha .alpha__filmstrip { height: 78px; }
+.alpha .alpha__filmstrip img { display: block; width: 100%; height: 78px; }
+.alpha .alpha__props { position: absolute; bottom: 0; list-style: none; padding-left: 152px; right: 0; left: 0; box-shadow: 0 -5px 7px rgba(0, 0, 0, 0.8); background: rgba(0, 0, 0, 0.8); }
+.alpha .alpha__props li { display: inline-block; color: #fff; font-size: 10px; margin-right: 24px; height: 22px; line-height: 22px; display: inline-block; }
+.alpha .alpha__props li strong { color: #aaa; font-weight: normal; text-transform: uppercase; }
+.alpha .alpha__type { z-index: 20; cursor: pointer; color: #fff; text-transform: uppercase; font-size: 12px; text-shadow: 0 -1px 1px black; position: absolute; left: -10px; bottom: -6px; height: 26px; line-height: 26px; -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #008bad), color-stop(100%, #00628b)); background-image: -webkit-linear-gradient(top, #008bad 0%, #00628b 100%); background-image: -moz-linear-gradient(top, #008bad 0%, #00628b 100%); background-image: -o-linear-gradient(top, #008bad 0%, #00628b 100%); background-image: -ms-linear-gradient(top, #008bad 0%, #00628b 100%); background-image: linear-gradient(top, #008bad 0%, #00628b 100%); border: 1px solid rgba(255, 255, 255, 0.2); border-top: 1px solid #42A3BF; -webkit-background-clip: border; -moz-background-clip: border; background-clip: border-box; padding: 0 9px 0 8px; }
+.alpha .alpha__type i { display: inline-block; margin-right: 9px; width: 13px; height: 13px; border: 1px solid #00316d; -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.7); -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.7); box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.7); vertical-align: middle; position: relative; top: -1px; }
+.alpha .alpha__type input { display: none; }
+.alpha .alpha__type input:checked + i { background: yellow; }
+.alpha .alpha__type span { vertical-align: middle; display: inline-block; height: 26px; line-height: 26px; position: relative; top: -1px; }
+.alpha .alpha__type:before { content: ' '; position: absolute; bottom: -10px; left: 0; background: url('../img/queue-sac97d5bfb1.png') 0 -30px no-repeat; width: 9px; height: 9px; }
+.alpha .alpha__info { background: #D7D7D7; padding: 18px 0 10px 0px; overflow: hidden; background-image: -webkit-gradient(linear, 50% 0%, 50% 60, color-stop(0%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0))); background-image: -webkit-linear-gradient(top, #ffffff 0px, rgba(255, 255, 255, 0) 60px); background-image: -moz-linear-gradient(top, #ffffff 0px, rgba(255, 255, 255, 0) 60px); background-image: -o-linear-gradient(top, #ffffff 0px, rgba(255, 255, 255, 0) 60px); background-image: -ms-linear-gradient(top, #ffffff 0px, rgba(255, 255, 255, 0) 60px); background-image: linear-gradient(top, #ffffff 0px, rgba(255, 255, 255, 0) 60px); -moz-background-size: 50px 50px 100%; -webkit-background-size: 50px 50px 100%; background-size: 50px 50px 100%; box-shadow: inset 0 -40px 40px -20px rgba(0, 0, 0, 0.3); }
+.alpha .media { float: left; width: 33%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 10px; }
+.alpha .media h2 { font-size: 10px; color: #777; text-transform: uppercase; margin-bottom: 4px; }
+.alpha .media h2 i { display: inline-block; vertical-align: middle; margin-right: 4px; }
+.alpha .media.media_video h2 i { background: url('../img/queue-sac97d5bfb1.png') 0 -221px no-repeat; width: 12px; height: 14px; }
+.alpha .media.media_audio h2 i { background: url('../img/queue-sac97d5bfb1.png') 0 -170px no-repeat; width: 12px; height: 16px; }
+.alpha .media.media_text h2 i { background: url('../img/queue-sac97d5bfb1.png') 0 -245px no-repeat; width: 14px; height: 11px; }
+.alpha .media.media_text h2 i { position: relative; top: -2px; }
+
+.track { margin-bottom: 11px; }
+.track .track__title { font-size: 19px; font-family: "cpmono",monospace; color: #252525; display: inline-block; margin-right: 14px; }
+.track .track__info { display: inline-block; font-size: 13px; }
+.track .track__info span { margin-right: 8px; }
+.track .track__info .track__comments { font-size: 10px; text-decoration: none; color: #252525; }
+.track .track__info .track__comments i { background: url('../img/queue-sac97d5bfb1.png') 0 -130px no-repeat; width: 12px; height: 11px; display: inline-block; margin-right: 3px; position: relative; top: 2px; }
+.track .track__rawtitle { display: block; font-size: 9px; color: #777; line-height: 1; -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; margin-top: -1px; margin-bottom: 2px; }
+.track .track__history { list-style: none; margin: 7px 0 0 0; color: #333; font-size: 10px; }
+.track .track__history li { height: 16px; line-height: 16px; margin-bottom: 2px; background: #ccc; padding-left: 11px; position: relative; margin-left: 8px; cursor: pointer; }
+.track .track__history li:before { position: absolute; content: ' '; left: -8px; top: 0; background: url('../img/queue-sac97d5bfb1.png') 0 -68px no-repeat; width: 8px; height: 16px; }
+.track .track__history li .track__added, .track .track__history li .track__edited { display: inline-block; position: absolute; top: 4px; left: -1px; }
+.track .track__history li .track__added { background: url('../img/queue-sac97d5bfb1.png') 0 -112px no-repeat; width: 8px; height: 8px; }
+.track .track__history li .track__edited { background: url('../img/queue-sac97d5bfb1.png') 0 -94px no-repeat; width: 8px; height: 8px; left: 0; }
+.track .track__moar { padding-top: 6px; border-top: 1px solid #EDEDED; box-shadow: 0 -1px 0 #acacac; margin-top: 20px; }
+.track .track__moar table { width: 100%; border-spacing: 0; border-collapse: collapse; }
+.track .track__moar table td, .track .track__moar table th { padding: 5px 0 5px 0; }
+.track .track__moar table th { font-size: 11px; font-weight: normal; text-align: left; color: #777; white-space: nowrap; padding-right: 20px; vertical-align: top; }
+.track .track__moar table td { font-size: 12px; color: #363636; -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; }
+.track .track__moar table td small { font-size: 10px; }
+.track .track__moar table tr:nth-child(even) td { background: #C9C9C9; }
+.track .track__moar table tr:nth-child(even) th { background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(201, 201, 201, 0)), color-stop(100%, #c9c9c9)); background-image: -webkit-linear-gradient(left, rgba(201, 201, 201, 0), #c9c9c9); background-image: -moz-linear-gradient(left, rgba(201, 201, 201, 0), #c9c9c9); background-image: -o-linear-gradient(left, rgba(201, 201, 201, 0), #c9c9c9); background-image: -ms-linear-gradient(left, rgba(201, 201, 201, 0), #c9c9c9); background-image: linear-gradient(left, rgba(201, 201, 201, 0), #c9c9c9); }
+
+.season, .episode { height: 26px; line-height: 26px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-size: 12px; color: #ccc; position: relative; margin-left: -9px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3a3a3a), color-stop(100%, #181818)); background-image: -webkit-linear-gradient(top, #3a3a3a, #181818); background-image: -moz-linear-gradient(top, #3a3a3a, #181818); background-image: -o-linear-gradient(top, #3a3a3a, #181818); background-image: -ms-linear-gradient(top, #3a3a3a, #181818); background-image: linear-gradient(top, #3a3a3a, #181818); padding-left: 33px; border-left: 1px solid #3F3F3F; border-top: 1px solid #464646; border-bottom: 1px solid #212222; }
+.season label, .episode label { cursor: pointer; }
+.season label i, .episode label i { position: absolute; left: 10px; top: 5px; display: inline-block; width: 13px; height: 13px; border: 1px solid #444444; background: #121212; }
+.season label input:checked + i, .episode label input:checked + i { background: #777; }
+.season:before, .episode:before { content: ' '; position: absolute; left: 0; bottom: -10px; background: url('../img/queue-sac97d5bfb1.png') 0 -49px no-repeat; width: 9px; height: 9px; }
+.season .season__title, .episode .season__title { text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7); }
+.season .season__collapse, .episode .season__collapse { top: 6px; }
+.season input, .episode input { display: none; }
+
+.episode .episode__collapse { top: 6px; }
+
+.loadmore { font-size: 24px; margin-left: 12px; color: #ccc; text-decoration: underline; cursor: pointer; margin-top: 24px; margin-bottom: 15px; }

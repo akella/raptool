@@ -137,3 +137,7 @@ $break-large: 1180px;
 	background: sprite($map, $sprite) no-repeat;
 	@include image-size(sprite-file($map, $sprite));
 }
+@mixin s($map, $sprite){
+	background: sprite($map, $sprite) no-repeat;
+	@include image-size(sprite-file($map, $sprite));
+}

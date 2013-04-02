@@ -107,6 +107,8 @@ body { overflow: auto; background: #303033; box-shadow: 0 20px 20px -20px rgba(0
 .alpha .media.media_text h2 i { background: url('../img/queue-s72341e7624.png') 0 -278px no-repeat; width: 14px; height: 11px; }
 .alpha .media.media_text h2 i { position: relative; top: -2px; }
 
+.nocontent { font-family: 'cpmono',monospace; color: #939393; font-size: 19px; font-weight: normal; }
+
 .track { margin-bottom: 11px; }
 .track .track__title { font-size: 19px; font-family: "cpmono",monospace; color: #252525; display: inline-block; margin-right: 14px; }
 .track .track__info { display: inline-block; font-size: 13px; }

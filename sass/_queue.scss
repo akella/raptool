@@ -38,11 +38,18 @@ body{
 			margin-right: 8px;
 			@include s($q, checkbox);
 			vertical-align: middle;
+			position: relative;
 		}
 		input{
 			display: none;
 			&:checked + i{
-				outline:1px solid #fff;
+				
+				b{
+					@include s($q, check);
+					top: 2px;
+					left: 0px;
+					position: absolute;
+				}
 			}
 		}
 		span{
@@ -210,11 +217,18 @@ body{
 			display: inline-block;
 			margin-right: 8px;
 			@include s($q, checkbox);
+			position: relative;
 		}
 		input{
 			display: none;
 			&:checked + i{
-				outline:1px solid #fff;
+				
+				b{
+					@include s($q, check);
+					top: 2px;
+					left: 0px;
+					position: absolute;
+				}
 			}
 		}
 	}
@@ -320,7 +334,12 @@ body{
 		input{
 			display: none;
 			&:checked + i{
-				background: yellow;
+				b{
+					@include s($q, check);
+					top: 2px;
+					left: 0px;
+					position: absolute;
+				}
 			}
 		}
 		span{
@@ -522,7 +541,13 @@ body{
 			background: #121212;
 		}
 		input:checked + i{
-			background: #777;
+// 			background: #777;
+			b{
+				@include s($q, check);
+				top: 2px;
+				left: 0px;
+				position: absolute;
+			}
 		}
 	}
 	&:before{

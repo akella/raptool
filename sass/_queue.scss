@@ -276,6 +276,18 @@ body{
 			}
 		}
 	}
+	.select{
+		display: inline-block;
+		position: relative;
+		select{
+			-webkit-appearance:none;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			top: 0;
+			opacity: 0;
+		}
+	}
 	.alpha__type{
 		z-index: 20;
 		cursor: pointer;

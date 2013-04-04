@@ -615,9 +615,9 @@ body{
 	box-shadow: 0 0 30px rgba(#000,1);
 
 	background-color: #ECECEC;
-	@include background-image(linear-gradient(top, #fff 0px, rgba(#fff,0) 60px));
-	@include background-size(50px 50px);
-	background-position: 0 100%;
+	@include background-image(linear-gradient(bottom, #7D7D7D 0px, #EDEDED 60px));
+	@include background-size(50px 150px);
+	
 	&.is-shown{
 		@include transform(translate3d(0,0,0));
 	}

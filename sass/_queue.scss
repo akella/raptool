@@ -588,8 +588,104 @@ body{
 	margin-bottom: 15px;
 }
 
+.overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	z-index: 2000;
+	background: rgba(#000,.7);
+	@include transition(all 500ms linear);
+	&.is-shown{
+		opacity: 1;
+	}
+}
+.popup{
+	position: fixed;
+	top: 100px;
+	z-index: 2100;
+	left: 50%;
+	width: 500px;
+	margin-left: -250px;
+	background: #EDEDED;
+	@include transform(translate3d(0,-700px,0));
+	@include transition(all 500ms ceaser($easeInOutBack));
+	box-shadow: 0 0 30px rgba(#000,1);
 
-
+	background-color: #ECECEC;
+	@include background-image(linear-gradient(top, #fff 0px, rgba(#fff,0) 60px));
+	@include background-size(50px 50px);
+	background-position: 0 100%;
+	&.is-shown{
+		@include transform(translate3d(0,0,0));
+	}
+	.popup__header{
+		background: #404040;
+		border-bottom: 1px solid #353535;
+		border-top: 3px solid #F68667;
+		box-shadow: 0 6px 10px 0px rgba(#000,.2);
+	}
+	.popup__title{
+		@include text-shadow(0 1px 2px rgba(0,0,0,.75));
+		font-family: 'LucidaSans-Demi', Arial, "Helvetica CY",  sans-serif;
+		color: #F7F7F7;
+		-webkit-mask-image: -webkit-linear-gradient(rgba(0,0,0,1) 40%, rgba(255,255,255,0.6) 70%);
+		font-size: 19px;
+		padding: 14px 0 14px 10px;
+		line-height: 1;
+	}
+	.popup__close{
+		position: absolute;
+		top: 14px;
+		right: 16px;
+		z-index: 2000;
+		cursor: pointer;
+		@include s($q, popup__close);
+	}
+	.popup__content{
+		padding: 14px 10px;
+	}
+	.popup__bottom{
+		border-top: 1px solid #F8F8F8;
+		box-shadow: 0 -1px 0 #AAAAAA;
+		padding: 14px 0 14px 10px;
+	}
+	.button{
+		@extend %button;
+		border-radius: 4px;
+		text-decoration: none;
+		i{
+			@include s($q, apply);
+			vertical-align: middle;
+			margin-right: 0px;
+			display: inline-block;
+		}
+	}
+	.field{
+		margin-bottom: 10px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		.field__label{
+			display: block;
+			text-transform: uppercase;
+			color: #8A8A8A;
+			margin-bottom: 4px;
+			font-size: 11px;
+			
+		}
+		.field__input{
+			border: 1px solid #CCC;
+			padding: 4px;
+			box-shadow:inset 2px 2px 3px rgba(#000,.1);
+			@include box-sizing(border-box);
+			display: block;
+			width: 100%;
+		}
+	}
+}
 
 
 

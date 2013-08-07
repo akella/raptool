@@ -34,7 +34,7 @@
 <!-- END topper -->
 
 <!-- BEGIN  l-video-->
-<div class="l-video">
+<div class="l-video" href="javascript:void(0);" onclick="javascript:introJs().setOption('tooltipClass', 'customDefault').start();">
 	<!-- BEGIN  video-edit-->
 	<div class="video-edit">
 		<div class="video-edit__fullscreen"></div>
@@ -56,11 +56,13 @@
 
 	
 	<!-- BEGIN  conversation-->
-	<div class="conversation-meta ">
-		<div class="conversation-meta__status conversation-meta__addnew is-private">Choose a conversation or add new</div>
+	<div class="conversation-meta " >
+	<div style="height:60px" data-step="1" data-intro="<h3>Playback controls</h3><p>Use this buttons to control playback. There is not hidden features or easter eggs. Play plays, rewind rewinds and pause pauses. The life it is.</p>" data-position='left'>
+		<div  class="conversation-meta__status conversation-meta__addnew is-private">Choose a conversation or add new</div>
 		<div class="conversation-meta__comments is-up">
 			<!-- <i class="icon-comments"></i>13 500 --><i class="icon-arrow"></i>
 		</div>
+	</div>
 		<div class="conversation-meta__drop">
 			
 			<!-- form -->
@@ -82,7 +84,7 @@
 			</div>
 			<!-- form -->
 			<!-- item -->
-			<div class="conversation-meta__drop-item is-hasnew">
+			<div class="conversation-meta__drop-item is-hasnew" data-step="2" data-intro="<h3>Playback controls</h3><p>Use this buttons to control playback. There is not hidden features or easter eggs. Play plays, rewind rewinds and pause pauses. The life it is.</p>" data-position='left'>
 				<div class="conversation-meta__status conversation-meta__addnew is-private"><i></i>Choose a conversation or add new</div>
 				<div class="conversation-meta__comments is-up">
 					13 500<i class="icon-arrow"></i>
@@ -285,7 +287,7 @@
 <!-- END l-comments-->
 
 <!-- BEGIN  l-timeline-->
-<div class="l-timeline">
+<div class="l-timeline" >
 	<!-- BEGIN  timeline-->
 	<div class="timeline">
 		<div class="timeline__progress" style="width:70%">90% left</div>
@@ -330,13 +332,13 @@
 		<div class="timecode__label">Frame Number</div>
 		<div class="timecode__value">4235</div>
 	</div>
-	<div class="controls">
+	<div class="controls" data-step="4" data-intro="<h3>Playback controls</h3><p>Ok, <b>wasn't</b> that fun?</p>" data-position='top'>
 		<div class="controls__back"><i></i></div>
 		<div class="controls__play controls__pause"><i></i></div>
 		<div class="controls__pause"><i></i></div>
 		<div class="controls__forw"><i></i></div>
 	</div>
-	<div class="volume">
+	<div class="volume" id="volume" data-step="3" data-intro="<h3>Playback controls</h3><p>Ok, <b>wasn't</b> that fun?</p>" data-position='top'>
 		<div class="volume__label">Volume</div>
 		<div class="volume__less"></div>
 		<input type="range" name="" class="volume__range" id="">
@@ -348,6 +350,9 @@
 	</div>
 </div>
 <!-- END l-timeline-->
-
+	<script type="text/javascript" src="js/intro.js"></script>
+	<script type="text/javascript">
+		introJs().setOption('tooltipClass', 'customDefault').start();
+	</script>
 </body>
 </html>

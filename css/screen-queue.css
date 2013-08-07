@@ -166,7 +166,7 @@ body { overflow: auto; background: #303033; }
 .popup .field .field__input { border: 1px solid #CCC; padding: 4px; box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: block; width: 100%; }
 .popup .field_name { display: inline-block; width: 300px; vertical-align: top; }
 .popup .field_name .field__input { font-size: 14px; }
-.popup .field_avatar { width: 50px; height: 50px; display: inline-block; margin-right: 13px; position: relative; vertical-align: top; }
+.popup .field_avatar { width: 50px; height: 50px; display: inline-block; margin-right: 13px; position: relative; vertical-align: top; cursor: pointer; }
 .popup .field_avatar input { position: absolute; -webkit-appearance: none; opacity: 0; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; }
 .popup .field_avatar .field__avatarplaceholder { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 2px dotted #CECECE; position: absolute; left: 0; top: 0; right: 0; bottom: 0; color: #777; font-size: 10px; padding: 7px 0 0 4px; }
 

@@ -337,7 +337,7 @@ html { position: relative; }
 
 .introjs-arrow { content: ''; position: absolute; background: url('../img/icons-s06c5f25336.png') 0 -1008px no-repeat; width: 17px; height: 17px; }
 .introjs-arrow.top { top: -17px; background: url('../img/icons-s06c5f25336.png') 0 -1131px no-repeat; width: 17px; height: 17px; }
-.introjs-arrow.right { right: -17px; top: 17px; -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -ms-transform: rotate(270deg); -o-transform: rotate(270deg); transform: rotate(270deg); }
+.introjs-arrow.right { right: -17px; top: 11px; -webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -ms-transform: rotate(270deg); -o-transform: rotate(270deg); transform: rotate(270deg); }
 .introjs-arrow.bottom { bottom: -17px; left: 17px; background: url('../img/icons-s06c5f25336.png') 0 -1131px no-repeat; width: 17px; height: 17px; }
 .introjs-arrow.left { left: -10px; top: 17px; }
 

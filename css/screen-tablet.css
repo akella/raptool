@@ -335,3 +335,9 @@ html { position: relative; }
 #dot2 { top: 194px; }
 
 #dot3 { left: auto; top: auto; bottom: 31px; right: 397px; }
+
+.introjs { position: absolute; top: 144px; right: 446px; color: #ffffff; font-size: 14px; z-index: 1000000; }
+.introjs:before { width: 140px; height: 49px; background: url(../img/arrow.png) no-repeat 0 0; content: ' '; display: inline-block; position: absolute; right: -52px; bottom: 3px; }
+.introjs h3 { font-size: 36px; font-weight: normal; margin-bottom: 5px; }
+.introjs p { margin-bottom: 20px; }
+.introjs a { color: #aaaaaa; }

@@ -1,7 +1,7 @@
 @import 'lib/base';
 .introjs-overlay {
 	position: absolute;
-	z-index: 999999;
+	z-index: 99999;
 	background-color: #000;
 	opacity: 0;
 	background: -moz-radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
@@ -26,7 +26,7 @@
 .introjs-helperLayer {
 	position: absolute;
 	z-index: 9999998;
-	border: 2px solid #C2C2C2;
+	border: 2px solid #fff;
 	box-shadow: 0 0px 10px rgba(#fff,.5), inset 0 0px 10px rgba(#fff,.5);
 	@include transition(all 0.3s ease-out);
 }
@@ -70,6 +70,7 @@
 	max-width: 400px;
 	box-shadow: 0 1px 10px rgba(0,0,0,.9);
 	@include transition(opacity 0.1s ease-out);
+	margin-right: 8px;
 	.introjs-tooltipbuttons {
 		margin: 0 10px;
 		border-top: 1px solid #BBBBBB;
@@ -153,4 +154,41 @@
 
 .introjs-disabled, .introjs-disabled:hover, .introjs-disabled:focus {
 	display: none;
+}
+.introjs__dot{
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	z-index: 9999998;
+	width: 28px;
+	height: 28px;
+	border: 2px solid #C2C2C2;
+	border-radius:50%;
+	box-shadow: 0 0 4px rgba(#fff, .3), inset 0 0 10px rgba(#fff ,.3);
+	cursor: pointer;
+	
+	div{
+		position: absolute;
+		left: 9px;
+		width: 10px;
+		height: 10px;
+		top: 9px;
+		background: #FFFFFF;
+		border-radius:50%;
+		box-shadow: 0 0 4px rgba(#fff, .3);
+	}
+}
+#dot1, #dot2{
+	left: auto;
+	right: 355px;
+	top: 51px;
+}
+#dot2{
+	top: 194px;
+}
+#dot3{
+	left: auto;
+	top: auto;
+	bottom: 31px;
+	right: 397px;
 }

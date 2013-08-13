@@ -323,7 +323,7 @@ html { position: relative; }
 .conversation-meta:after, .conversation-meta .conversation-meta__drop-item:after, .comments .comments__meta:after, .comment .comment__content:after { content: " "; display: table; }
 .conversation-meta:after, .conversation-meta .conversation-meta__drop-item:after, .comments .comments__meta:after, .comment .comment__content:after { clear: both; }
 
-.introjs-overlay { position: absolute; z-index: 999999; background-color: #000; opacity: 0; background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%); background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.9))); background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%); background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%); background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%); background: radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%); -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
+.introjs-overlay { position: absolute; z-index: 99999; background-color: #000; opacity: 0; background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%); background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.9))); background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%); background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%); background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%); background: radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%); -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
 
 .introjs-fixParent { z-index: auto !important; }
 
@@ -331,7 +331,7 @@ html { position: relative; }
 
 .introjs-relativePosition { position: relative; }
 
-.introjs-helperLayer { position: absolute; z-index: 9999998; border: 2px solid #C2C2C2; box-shadow: 0 0px 10px rgba(255, 255, 255, 0.5), inset 0 0px 10px rgba(255, 255, 255, 0.5); -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
+.introjs-helperLayer { position: absolute; z-index: 9999998; border: 2px solid #fff; box-shadow: 0 0px 10px rgba(255, 255, 255, 0.5), inset 0 0px 10px rgba(255, 255, 255, 0.5); -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
 
 .introjs-helperNumberLayer { display: none; }
 
@@ -341,7 +341,7 @@ html { position: relative; }
 .introjs-arrow.bottom { bottom: -17px; left: 17px; background: url('../img/icons-s06c5f25336.png') 0 -1131px no-repeat; width: 17px; height: 17px; }
 .introjs-arrow.left { left: -10px; top: 17px; }
 
-.introjs-tooltip { position: absolute; background: #D8D8D8; border-top: 2px solid #D8D8D8; min-width: 280px; max-width: 400px; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.9); -webkit-transition: opacity 0.1s ease-out; -moz-transition: opacity 0.1s ease-out; -ms-transition: opacity 0.1s ease-out; -o-transition: opacity 0.1s ease-out; transition: opacity 0.1s ease-out; }
+.introjs-tooltip { position: absolute; background: #D8D8D8; border-top: 2px solid #D8D8D8; min-width: 280px; max-width: 400px; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.9); -webkit-transition: opacity 0.1s ease-out; -moz-transition: opacity 0.1s ease-out; -ms-transition: opacity 0.1s ease-out; -o-transition: opacity 0.1s ease-out; transition: opacity 0.1s ease-out; margin-right: 8px; }
 .introjs-tooltip .introjs-tooltipbuttons { margin: 0 10px; border-top: 1px solid #BBBBBB; overflow: hidden; padding: 13px 0; }
 .introjs-tooltip h3 { font-weight: bold; color: #999999; font-size: 18px; background: #404040; height: 40px; line-height: 40px; padding: 0 10px; border-bottom: 1px solid #FFFFFF; margin-bottom: 10px; }
 .introjs-tooltip p { margin: 0 10px 9px 10px; font-size: 13px; color: #444; line-height: 1.4; }
@@ -360,3 +360,12 @@ html { position: relative; }
 .introjs-nextbutton:before { position: absolute; content: ' '; background: url('../img/icons-s06c5f25336.png') 0 -1158px no-repeat; width: 9px; height: 17px; right: -14px; }
 
 .introjs-disabled, .introjs-disabled:hover, .introjs-disabled:focus { display: none; }
+
+.introjs__dot { position: absolute; top: 200px; left: 200px; z-index: 9999998; width: 28px; height: 28px; border: 2px solid #C2C2C2; border-radius: 50%; box-shadow: 0 0 4px rgba(255, 255, 255, 0.3), inset 0 0 10px rgba(255, 255, 255, 0.3); cursor: pointer; }
+.introjs__dot div { position: absolute; left: 9px; width: 10px; height: 10px; top: 9px; background: #FFFFFF; border-radius: 50%; box-shadow: 0 0 4px rgba(255, 255, 255, 0.3); }
+
+#dot1, #dot2 { left: auto; right: 355px; top: 51px; }
+
+#dot2 { top: 194px; }
+
+#dot3 { left: auto; top: auto; bottom: 31px; right: 397px; }

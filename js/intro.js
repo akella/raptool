@@ -231,12 +231,12 @@
     //remove overlay layer from the page
     var overlayLayer = targetElement.querySelector('.introjs-overlay');
     //for fade-out animation
-    overlayLayer.style.opacity = 0;
-    setTimeout(function () {
-      if (overlayLayer.parentNode) {
-        overlayLayer.parentNode.removeChild(overlayLayer);
-      }
-    }, 500);
+    // overlayLayer.style.opacity = 0;
+    // setTimeout(function () {
+    //   if (overlayLayer.parentNode) {
+    //     overlayLayer.parentNode.removeChild(overlayLayer);
+    //   }
+    // }, 500);
     //remove all helper layers
     var helperLayer = targetElement.querySelector('.introjs-helperLayer');
     if (helperLayer) {

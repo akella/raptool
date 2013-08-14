@@ -291,6 +291,8 @@ html { position: relative; }
 
 .introjs-overlay { position: absolute; z-index: 99999; background-color: #000; opacity: 0; background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%); background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.9))); background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%); background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%); background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.9) 100%); background: radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%); -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
 
+.introjs-helperLayer + .introjs-overlay, .introjs-helperLayer + .introjs-overlay + .introjs-overlay, .introjs-helperLayer + .introjs-overlay + .introjs-overlay + .introjs-overlay, .introjs-helperLayer + .introjs-overlay + .introjs-overlay + .introjs-overlay + .introjs-overlay, .introjs-helperLayer + .introjs-overlay + .introjs-overlay + .introjs-overlay + .introjs-overlay + .introjs-overlay { display: none; }
+
 .introjs-fixParent { z-index: auto !important; }
 
 .introjs-showElement { z-index: 9999999 !important; }
